@@ -1,0 +1,4611 @@
+   Compiling day5 v0.1.0 (/home/wagnerf/code/aoc/day5)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.48s
+     Running `target/debug/day5`
+message is TGWSMRBPN
+moving 5 from 3 to 6
+amount is 5, source is ['J', 'C', 'H', 'T', 'L', 'V']
+target was ['W', 'D', 'G', 'B', 'H', 'N', 'Z']
+draining C
+draining H
+draining T
+draining L
+draining V
+target is now ['W', 'D', 'G', 'B', 'H', 'N', 'Z', 'C', 'H', 'T', 'L', 'V']
+moving 2 from 2 to 5
+amount is 2, source is ['N', 'B', 'L']
+target was ['Z', 'S', 'C', 'F', 'T', 'L', 'R']
+draining B
+draining L
+target is now ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'B', 'L']
+moving 1 from 9 to 1
+amount is 1, source is ['R', 'P', 'M', 'L', 'H']
+target was ['B', 'L', 'D', 'T', 'W', 'C', 'F', 'M']
+draining H
+target is now ['B', 'L', 'D', 'T', 'W', 'C', 'F', 'M', 'H']
+moving 1 from 3 to 1
+amount is 1, source is ['J']
+target was ['B', 'L', 'D', 'T', 'W', 'C', 'F', 'M', 'H']
+draining J
+target is now ['B', 'L', 'D', 'T', 'W', 'C', 'F', 'M', 'H', 'J']
+moving 5 from 7 to 5
+amount is 5, source is ['F', 'M', 'S', 'P', 'V', 'G', 'C', 'N']
+target was ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'B', 'L']
+draining P
+draining V
+draining G
+draining C
+draining N
+target is now ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'B', 'L', 'P', 'V', 'G', 'C', 'N']
+moving 2 from 9 to 8
+amount is 2, source is ['R', 'P', 'M', 'L']
+target was ['W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z']
+draining M
+draining L
+target is now ['W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z', 'M', 'L']
+moving 1 from 2 to 8
+amount is 1, source is ['N']
+target was ['W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z', 'M', 'L']
+draining N
+target is now ['W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z', 'M', 'L', 'N']
+moving 1 from 4 to 2
+amount is 1, source is ['S', 'P', 'J', 'W']
+target was []
+draining W
+target is now ['W']
+moving 8 from 1 to 6
+amount is 8, source is ['B', 'L', 'D', 'T', 'W', 'C', 'F', 'M', 'H', 'J']
+target was ['W', 'D', 'G', 'B', 'H', 'N', 'Z', 'C', 'H', 'T', 'L', 'V']
+draining D
+draining T
+draining W
+draining C
+draining F
+draining M
+draining H
+draining J
+target is now ['W', 'D', 'G', 'B', 'H', 'N', 'Z', 'C', 'H', 'T', 'L', 'V', 'D', 'T', 'W', 'C', 'F', 'M', 'H', 'J']
+moving 4 from 6 to 9
+amount is 4, source is ['W', 'D', 'G', 'B', 'H', 'N', 'Z', 'C', 'H', 'T', 'L', 'V', 'D', 'T', 'W', 'C', 'F', 'M', 'H', 'J']
+target was ['R', 'P']
+draining F
+draining M
+draining H
+draining J
+target is now ['R', 'P', 'F', 'M', 'H', 'J']
+moving 1 from 2 to 1
+amount is 1, source is ['W']
+target was ['B', 'L']
+draining W
+target is now ['B', 'L', 'W']
+moving 2 from 4 to 8
+amount is 2, source is ['S', 'P', 'J']
+target was ['W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z', 'M', 'L', 'N']
+draining P
+draining J
+target is now ['W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z', 'M', 'L', 'N', 'P', 'J']
+moving 2 from 8 to 4
+amount is 2, source is ['W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z', 'M', 'L', 'N', 'P', 'J']
+target was ['S']
+draining P
+draining J
+target is now ['S', 'P', 'J']
+moving 3 from 7 to 5
+amount is 3, source is ['F', 'M', 'S']
+target was ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'B', 'L', 'P', 'V', 'G', 'C', 'N']
+draining F
+draining M
+draining S
+target is now ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'B', 'L', 'P', 'V', 'G', 'C', 'N', 'F', 'M', 'S']
+moving 6 from 5 to 3
+amount is 6, source is ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'B', 'L', 'P', 'V', 'G', 'C', 'N', 'F', 'M', 'S']
+target was []
+draining G
+draining C
+draining N
+draining F
+draining M
+draining S
+target is now ['G', 'C', 'N', 'F', 'M', 'S']
+moving 1 from 1 to 8
+amount is 1, source is ['B', 'L', 'W']
+target was ['W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z', 'M', 'L', 'N']
+draining W
+target is now ['W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z', 'M', 'L', 'N', 'W']
+moving 1 from 5 to 7
+amount is 1, source is ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'B', 'L', 'P', 'V']
+target was []
+draining V
+target is now ['V']
+moving 5 from 6 to 9
+amount is 5, source is ['W', 'D', 'G', 'B', 'H', 'N', 'Z', 'C', 'H', 'T', 'L', 'V', 'D', 'T', 'W', 'C']
+target was ['R', 'P', 'F', 'M', 'H', 'J']
+draining V
+draining D
+draining T
+draining W
+draining C
+target is now ['R', 'P', 'F', 'M', 'H', 'J', 'V', 'D', 'T', 'W', 'C']
+moving 3 from 5 to 8
+amount is 3, source is ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'B', 'L', 'P']
+target was ['W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z', 'M', 'L', 'N', 'W']
+draining B
+draining L
+draining P
+target is now ['W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'P']
+moving 2 from 4 to 3
+amount is 2, source is ['S', 'P', 'J']
+target was ['G', 'C', 'N', 'F', 'M', 'S']
+draining P
+draining J
+target is now ['G', 'C', 'N', 'F', 'M', 'S', 'P', 'J']
+moving 1 from 7 to 8
+amount is 1, source is ['V']
+target was ['W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'P']
+draining V
+target is now ['W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'P', 'V']
+moving 2 from 8 to 6
+amount is 2, source is ['W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'P', 'V']
+target was ['W', 'D', 'G', 'B', 'H', 'N', 'Z', 'C', 'H', 'T', 'L']
+draining P
+draining V
+target is now ['W', 'D', 'G', 'B', 'H', 'N', 'Z', 'C', 'H', 'T', 'L', 'P', 'V']
+moving 2 from 1 to 8
+amount is 2, source is ['B', 'L']
+target was ['W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L']
+draining B
+draining L
+target is now ['W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'B', 'L']
+moving 8 from 3 to 8
+amount is 8, source is ['G', 'C', 'N', 'F', 'M', 'S', 'P', 'J']
+target was ['W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'B', 'L']
+draining G
+draining C
+draining N
+draining F
+draining M
+draining S
+draining P
+draining J
+target is now ['W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J']
+moving 11 from 6 to 3
+amount is 11, source is ['W', 'D', 'G', 'B', 'H', 'N', 'Z', 'C', 'H', 'T', 'L', 'P', 'V']
+target was []
+draining G
+draining B
+draining H
+draining N
+draining Z
+draining C
+draining H
+draining T
+draining L
+draining P
+draining V
+target is now ['G', 'B', 'H', 'N', 'Z', 'C', 'H', 'T', 'L', 'P', 'V']
+moving 1 from 4 to 7
+amount is 1, source is ['S']
+target was []
+draining S
+target is now ['S']
+moving 1 from 3 to 7
+amount is 1, source is ['G', 'B', 'H', 'N', 'Z', 'C', 'H', 'T', 'L', 'P', 'V']
+target was ['S']
+draining V
+target is now ['S', 'V']
+moving 2 from 6 to 1
+amount is 2, source is ['W', 'D']
+target was []
+draining W
+draining D
+target is now ['W', 'D']
+moving 7 from 9 to 7
+amount is 7, source is ['R', 'P', 'F', 'M', 'H', 'J', 'V', 'D', 'T', 'W', 'C']
+target was ['S', 'V']
+draining H
+draining J
+draining V
+draining D
+draining T
+draining W
+draining C
+target is now ['S', 'V', 'H', 'J', 'V', 'D', 'T', 'W', 'C']
+moving 10 from 3 to 5
+amount is 10, source is ['G', 'B', 'H', 'N', 'Z', 'C', 'H', 'T', 'L', 'P']
+target was ['Z', 'S', 'C', 'F', 'T', 'L', 'R']
+draining G
+draining B
+draining H
+draining N
+draining Z
+draining C
+draining H
+draining T
+draining L
+draining P
+target is now ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'G', 'B', 'H', 'N', 'Z', 'C', 'H', 'T', 'L', 'P']
+moving 1 from 9 to 3
+amount is 1, source is ['R', 'P', 'F', 'M']
+target was []
+draining M
+target is now ['M']
+moving 2 from 9 to 5
+amount is 2, source is ['R', 'P', 'F']
+target was ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'G', 'B', 'H', 'N', 'Z', 'C', 'H', 'T', 'L', 'P']
+draining P
+draining F
+target is now ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'G', 'B', 'H', 'N', 'Z', 'C', 'H', 'T', 'L', 'P', 'P', 'F']
+moving 5 from 5 to 2
+amount is 5, source is ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'G', 'B', 'H', 'N', 'Z', 'C', 'H', 'T', 'L', 'P', 'P', 'F']
+target was []
+draining T
+draining L
+draining P
+draining P
+draining F
+target is now ['T', 'L', 'P', 'P', 'F']
+moving 19 from 8 to 6
+amount is 19, source is ['W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J']
+target was []
+draining V
+draining C
+draining Z
+draining M
+draining L
+draining N
+draining W
+draining B
+draining L
+draining B
+draining L
+draining G
+draining C
+draining N
+draining F
+draining M
+draining S
+draining P
+draining J
+target is now ['V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J']
+moving 1 from 9 to 6
+amount is 1, source is ['R']
+target was ['V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J']
+draining R
+target is now ['V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R']
+moving 1 from 3 to 8
+amount is 1, source is ['M']
+target was ['W', 'Q', 'R', 'J', 'F']
+draining M
+target is now ['W', 'Q', 'R', 'J', 'F', 'M']
+moving 4 from 2 to 6
+amount is 4, source is ['T', 'L', 'P', 'P', 'F']
+target was ['V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R']
+draining L
+draining P
+draining P
+draining F
+target is now ['V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F']
+moving 1 from 1 to 4
+amount is 1, source is ['W', 'D']
+target was []
+draining D
+target is now ['D']
+moving 5 from 8 to 9
+amount is 5, source is ['W', 'Q', 'R', 'J', 'F', 'M']
+target was []
+draining Q
+draining R
+draining J
+draining F
+draining M
+target is now ['Q', 'R', 'J', 'F', 'M']
+moving 1 from 2 to 1
+amount is 1, source is ['T']
+target was ['W']
+draining T
+target is now ['W', 'T']
+moving 6 from 7 to 2
+amount is 6, source is ['S', 'V', 'H', 'J', 'V', 'D', 'T', 'W', 'C']
+target was []
+draining J
+draining V
+draining D
+draining T
+draining W
+draining C
+target is now ['J', 'V', 'D', 'T', 'W', 'C']
+moving 3 from 5 to 8
+amount is 3, source is ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'G', 'B', 'H', 'N', 'Z', 'C', 'H']
+target was ['W']
+draining Z
+draining C
+draining H
+target is now ['W', 'Z', 'C', 'H']
+moving 3 from 8 to 1
+amount is 3, source is ['W', 'Z', 'C', 'H']
+target was ['W', 'T']
+draining Z
+draining C
+draining H
+target is now ['W', 'T', 'Z', 'C', 'H']
+moving 2 from 9 to 6
+amount is 2, source is ['Q', 'R', 'J', 'F', 'M']
+target was ['V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F']
+draining F
+draining M
+target is now ['V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M']
+moving 1 from 7 to 8
+amount is 1, source is ['S', 'V', 'H']
+target was ['W']
+draining H
+target is now ['W', 'H']
+moving 6 from 2 to 7
+amount is 6, source is ['J', 'V', 'D', 'T', 'W', 'C']
+target was ['S', 'V']
+draining J
+draining V
+draining D
+draining T
+draining W
+draining C
+target is now ['S', 'V', 'J', 'V', 'D', 'T', 'W', 'C']
+moving 1 from 4 to 8
+amount is 1, source is ['D']
+target was ['W', 'H']
+draining D
+target is now ['W', 'H', 'D']
+moving 3 from 8 to 4
+amount is 3, source is ['W', 'H', 'D']
+target was []
+draining W
+draining H
+draining D
+target is now ['W', 'H', 'D']
+moving 2 from 1 to 5
+amount is 2, source is ['W', 'T', 'Z', 'C', 'H']
+target was ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'G', 'B', 'H', 'N']
+draining C
+draining H
+target is now ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'G', 'B', 'H', 'N', 'C', 'H']
+moving 7 from 7 to 6
+amount is 7, source is ['S', 'V', 'J', 'V', 'D', 'T', 'W', 'C']
+target was ['V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M']
+draining V
+draining J
+draining V
+draining D
+draining T
+draining W
+draining C
+target is now ['V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M', 'V', 'J', 'V', 'D', 'T', 'W', 'C']
+moving 1 from 7 to 2
+amount is 1, source is ['S']
+target was []
+draining S
+target is now ['S']
+moving 3 from 4 to 6
+amount is 3, source is ['W', 'H', 'D']
+target was ['V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M', 'V', 'J', 'V', 'D', 'T', 'W', 'C']
+draining W
+draining H
+draining D
+target is now ['V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M', 'V', 'J', 'V', 'D', 'T', 'W', 'C', 'W', 'H', 'D']
+moving 2 from 9 to 2
+amount is 2, source is ['Q', 'R', 'J']
+target was ['S']
+draining R
+draining J
+target is now ['S', 'R', 'J']
+moving 1 from 1 to 8
+amount is 1, source is ['W', 'T', 'Z']
+target was []
+draining Z
+target is now ['Z']
+moving 2 from 1 to 3
+amount is 2, source is ['W', 'T']
+target was []
+draining W
+draining T
+target is now ['W', 'T']
+moving 1 from 8 to 7
+amount is 1, source is ['Z']
+target was []
+draining Z
+target is now ['Z']
+moving 3 from 2 to 5
+amount is 3, source is ['S', 'R', 'J']
+target was ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'G', 'B', 'H', 'N', 'C', 'H']
+draining S
+draining R
+draining J
+target is now ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'G', 'B', 'H', 'N', 'C', 'H', 'S', 'R', 'J']
+moving 5 from 5 to 8
+amount is 5, source is ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'G', 'B', 'H', 'N', 'C', 'H', 'S', 'R', 'J']
+target was []
+draining C
+draining H
+draining S
+draining R
+draining J
+target is now ['C', 'H', 'S', 'R', 'J']
+moving 4 from 5 to 3
+amount is 4, source is ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'G', 'B', 'H', 'N']
+target was ['W', 'T']
+draining G
+draining B
+draining H
+draining N
+target is now ['W', 'T', 'G', 'B', 'H', 'N']
+moving 1 from 7 to 8
+amount is 1, source is ['Z']
+target was ['C', 'H', 'S', 'R', 'J']
+draining Z
+target is now ['C', 'H', 'S', 'R', 'J', 'Z']
+moving 2 from 8 to 1
+amount is 2, source is ['C', 'H', 'S', 'R', 'J', 'Z']
+target was []
+draining J
+draining Z
+target is now ['J', 'Z']
+moving 1 from 8 to 5
+amount is 1, source is ['C', 'H', 'S', 'R']
+target was ['Z', 'S', 'C', 'F', 'T', 'L', 'R']
+draining R
+target is now ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'R']
+moving 5 from 3 to 5
+amount is 5, source is ['W', 'T', 'G', 'B', 'H', 'N']
+target was ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'R']
+draining T
+draining G
+draining B
+draining H
+draining N
+target is now ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'R', 'T', 'G', 'B', 'H', 'N']
+moving 13 from 5 to 1
+amount is 13, source is ['Z', 'S', 'C', 'F', 'T', 'L', 'R', 'R', 'T', 'G', 'B', 'H', 'N']
+target was ['J', 'Z']
+draining Z
+draining S
+draining C
+draining F
+draining T
+draining L
+draining R
+draining R
+draining T
+draining G
+draining B
+draining H
+draining N
+target is now ['J', 'Z', 'Z', 'S', 'C', 'F', 'T', 'L', 'R', 'R', 'T', 'G', 'B', 'H', 'N']
+moving 1 from 3 to 4
+amount is 1, source is ['W']
+target was []
+draining W
+target is now ['W']
+moving 2 from 8 to 3
+amount is 2, source is ['C', 'H', 'S']
+target was []
+draining H
+draining S
+target is now ['H', 'S']
+moving 3 from 1 to 4
+amount is 3, source is ['J', 'Z', 'Z', 'S', 'C', 'F', 'T', 'L', 'R', 'R', 'T', 'G', 'B', 'H', 'N']
+target was ['W']
+draining B
+draining H
+draining N
+target is now ['W', 'B', 'H', 'N']
+moving 1 from 3 to 1
+amount is 1, source is ['H', 'S']
+target was ['J', 'Z', 'Z', 'S', 'C', 'F', 'T', 'L', 'R', 'R', 'T', 'G']
+draining S
+target is now ['J', 'Z', 'Z', 'S', 'C', 'F', 'T', 'L', 'R', 'R', 'T', 'G', 'S']
+moving 1 from 8 to 1
+amount is 1, source is ['C']
+target was ['J', 'Z', 'Z', 'S', 'C', 'F', 'T', 'L', 'R', 'R', 'T', 'G', 'S']
+draining C
+target is now ['J', 'Z', 'Z', 'S', 'C', 'F', 'T', 'L', 'R', 'R', 'T', 'G', 'S', 'C']
+moving 5 from 1 to 9
+amount is 5, source is ['J', 'Z', 'Z', 'S', 'C', 'F', 'T', 'L', 'R', 'R', 'T', 'G', 'S', 'C']
+target was ['Q']
+draining R
+draining T
+draining G
+draining S
+draining C
+target is now ['Q', 'R', 'T', 'G', 'S', 'C']
+moving 1 from 3 to 7
+amount is 1, source is ['H']
+target was []
+draining H
+target is now ['H']
+moving 2 from 9 to 6
+amount is 2, source is ['Q', 'R', 'T', 'G', 'S', 'C']
+target was ['V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M', 'V', 'J', 'V', 'D', 'T', 'W', 'C', 'W', 'H', 'D']
+draining S
+draining C
+target is now ['V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M', 'V', 'J', 'V', 'D', 'T', 'W', 'C', 'W', 'H', 'D', 'S', 'C']
+moving 2 from 1 to 7
+amount is 2, source is ['J', 'Z', 'Z', 'S', 'C', 'F', 'T', 'L', 'R']
+target was ['H']
+draining L
+draining R
+target is now ['H', 'L', 'R']
+moving 3 from 1 to 5
+amount is 3, source is ['J', 'Z', 'Z', 'S', 'C', 'F', 'T']
+target was []
+draining C
+draining F
+draining T
+target is now ['C', 'F', 'T']
+moving 3 from 1 to 5
+amount is 3, source is ['J', 'Z', 'Z', 'S']
+target was ['C', 'F', 'T']
+draining Z
+draining Z
+draining S
+target is now ['C', 'F', 'T', 'Z', 'Z', 'S']
+moving 1 from 6 to 1
+amount is 1, source is ['V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M', 'V', 'J', 'V', 'D', 'T', 'W', 'C', 'W', 'H', 'D', 'S', 'C']
+target was ['J']
+draining C
+target is now ['J', 'C']
+moving 4 from 4 to 3
+amount is 4, source is ['W', 'B', 'H', 'N']
+target was []
+draining W
+draining B
+draining H
+draining N
+target is now ['W', 'B', 'H', 'N']
+moving 3 from 9 to 1
+amount is 3, source is ['Q', 'R', 'T', 'G']
+target was ['J', 'C']
+draining R
+draining T
+draining G
+target is now ['J', 'C', 'R', 'T', 'G']
+moving 5 from 1 to 7
+amount is 5, source is ['J', 'C', 'R', 'T', 'G']
+target was ['H', 'L', 'R']
+draining J
+draining C
+draining R
+draining T
+draining G
+target is now ['H', 'L', 'R', 'J', 'C', 'R', 'T', 'G']
+moving 7 from 7 to 8
+amount is 7, source is ['H', 'L', 'R', 'J', 'C', 'R', 'T', 'G']
+target was []
+draining L
+draining R
+draining J
+draining C
+draining R
+draining T
+draining G
+target is now ['L', 'R', 'J', 'C', 'R', 'T', 'G']
+moving 1 from 3 to 9
+amount is 1, source is ['W', 'B', 'H', 'N']
+target was ['Q']
+draining N
+target is now ['Q', 'N']
+moving 28 from 6 to 8
+amount is 28, source is ['V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M', 'V', 'J', 'V', 'D', 'T', 'W', 'C', 'W', 'H', 'D', 'S']
+target was ['L', 'R', 'J', 'C', 'R', 'T', 'G']
+draining B
+draining L
+draining G
+draining C
+draining N
+draining F
+draining M
+draining S
+draining P
+draining J
+draining R
+draining L
+draining P
+draining P
+draining F
+draining F
+draining M
+draining V
+draining J
+draining V
+draining D
+draining T
+draining W
+draining C
+draining W
+draining H
+draining D
+draining S
+target is now ['L', 'R', 'J', 'C', 'R', 'T', 'G', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M', 'V', 'J', 'V', 'D', 'T', 'W', 'C', 'W', 'H', 'D', 'S']
+moving 5 from 5 to 9
+amount is 5, source is ['C', 'F', 'T', 'Z', 'Z', 'S']
+target was ['Q', 'N']
+draining F
+draining T
+draining Z
+draining Z
+draining S
+target is now ['Q', 'N', 'F', 'T', 'Z', 'Z', 'S']
+moving 6 from 6 to 1
+amount is 6, source is ['V', 'C', 'Z', 'M', 'L', 'N', 'W', 'B', 'L']
+target was []
+draining M
+draining L
+draining N
+draining W
+draining B
+draining L
+target is now ['M', 'L', 'N', 'W', 'B', 'L']
+moving 4 from 1 to 8
+amount is 4, source is ['M', 'L', 'N', 'W', 'B', 'L']
+target was ['L', 'R', 'J', 'C', 'R', 'T', 'G', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M', 'V', 'J', 'V', 'D', 'T', 'W', 'C', 'W', 'H', 'D', 'S']
+draining N
+draining W
+draining B
+draining L
+target is now ['L', 'R', 'J', 'C', 'R', 'T', 'G', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M', 'V', 'J', 'V', 'D', 'T', 'W', 'C', 'W', 'H', 'D', 'S', 'N', 'W', 'B', 'L']
+moving 5 from 9 to 1
+amount is 5, source is ['Q', 'N', 'F', 'T', 'Z', 'Z', 'S']
+target was ['M', 'L']
+draining F
+draining T
+draining Z
+draining Z
+draining S
+target is now ['M', 'L', 'F', 'T', 'Z', 'Z', 'S']
+moving 12 from 8 to 7
+amount is 12, source is ['L', 'R', 'J', 'C', 'R', 'T', 'G', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M', 'V', 'J', 'V', 'D', 'T', 'W', 'C', 'W', 'H', 'D', 'S', 'N', 'W', 'B', 'L']
+target was ['H']
+draining D
+draining T
+draining W
+draining C
+draining W
+draining H
+draining D
+draining S
+draining N
+draining W
+draining B
+draining L
+target is now ['H', 'D', 'T', 'W', 'C', 'W', 'H', 'D', 'S', 'N', 'W', 'B', 'L']
+moving 1 from 3 to 8
+amount is 1, source is ['W', 'B', 'H']
+target was ['L', 'R', 'J', 'C', 'R', 'T', 'G', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M', 'V', 'J', 'V']
+draining H
+target is now ['L', 'R', 'J', 'C', 'R', 'T', 'G', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M', 'V', 'J', 'V', 'H']
+moving 6 from 1 to 4
+amount is 6, source is ['M', 'L', 'F', 'T', 'Z', 'Z', 'S']
+target was []
+draining L
+draining F
+draining T
+draining Z
+draining Z
+draining S
+target is now ['L', 'F', 'T', 'Z', 'Z', 'S']
+moving 5 from 4 to 1
+amount is 5, source is ['L', 'F', 'T', 'Z', 'Z', 'S']
+target was ['M']
+draining F
+draining T
+draining Z
+draining Z
+draining S
+target is now ['M', 'F', 'T', 'Z', 'Z', 'S']
+moving 3 from 6 to 4
+amount is 3, source is ['V', 'C', 'Z']
+target was ['L']
+draining V
+draining C
+draining Z
+target is now ['L', 'V', 'C', 'Z']
+moving 2 from 3 to 4
+amount is 2, source is ['W', 'B']
+target was ['L', 'V', 'C', 'Z']
+draining W
+draining B
+target is now ['L', 'V', 'C', 'Z', 'W', 'B']
+moving 3 from 1 to 5
+amount is 3, source is ['M', 'F', 'T', 'Z', 'Z', 'S']
+target was ['C']
+draining Z
+draining Z
+draining S
+target is now ['C', 'Z', 'Z', 'S']
+moving 6 from 7 to 1
+amount is 6, source is ['H', 'D', 'T', 'W', 'C', 'W', 'H', 'D', 'S', 'N', 'W', 'B', 'L']
+target was ['M', 'F', 'T']
+draining D
+draining S
+draining N
+draining W
+draining B
+draining L
+target is now ['M', 'F', 'T', 'D', 'S', 'N', 'W', 'B', 'L']
+moving 2 from 4 to 9
+amount is 2, source is ['L', 'V', 'C', 'Z', 'W', 'B']
+target was ['Q', 'N']
+draining W
+draining B
+target is now ['Q', 'N', 'W', 'B']
+moving 2 from 5 to 4
+amount is 2, source is ['C', 'Z', 'Z', 'S']
+target was ['L', 'V', 'C', 'Z']
+draining Z
+draining S
+target is now ['L', 'V', 'C', 'Z', 'Z', 'S']
+moving 19 from 8 to 1
+amount is 19, source is ['L', 'R', 'J', 'C', 'R', 'T', 'G', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M', 'V', 'J', 'V', 'H']
+target was ['M', 'F', 'T', 'D', 'S', 'N', 'W', 'B', 'L']
+draining G
+draining C
+draining N
+draining F
+draining M
+draining S
+draining P
+draining J
+draining R
+draining L
+draining P
+draining P
+draining F
+draining F
+draining M
+draining V
+draining J
+draining V
+draining H
+target is now ['M', 'F', 'T', 'D', 'S', 'N', 'W', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M', 'V', 'J', 'V', 'H']
+moving 4 from 9 to 5
+amount is 4, source is ['Q', 'N', 'W', 'B']
+target was ['C', 'Z']
+draining Q
+draining N
+draining W
+draining B
+target is now ['C', 'Z', 'Q', 'N', 'W', 'B']
+moving 5 from 4 to 3
+amount is 5, source is ['L', 'V', 'C', 'Z', 'Z', 'S']
+target was []
+draining V
+draining C
+draining Z
+draining Z
+draining S
+target is now ['V', 'C', 'Z', 'Z', 'S']
+moving 4 from 1 to 4
+amount is 4, source is ['M', 'F', 'T', 'D', 'S', 'N', 'W', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M', 'V', 'J', 'V', 'H']
+target was ['L']
+draining V
+draining J
+draining V
+draining H
+target is now ['L', 'V', 'J', 'V', 'H']
+moving 5 from 5 to 1
+amount is 5, source is ['C', 'Z', 'Q', 'N', 'W', 'B']
+target was ['M', 'F', 'T', 'D', 'S', 'N', 'W', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M']
+draining Z
+draining Q
+draining N
+draining W
+draining B
+target is now ['M', 'F', 'T', 'D', 'S', 'N', 'W', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M', 'Z', 'Q', 'N', 'W', 'B']
+moving 3 from 8 to 5
+amount is 3, source is ['L', 'R', 'J', 'C', 'R', 'T', 'G', 'B', 'L']
+target was ['C']
+draining G
+draining B
+draining L
+target is now ['C', 'G', 'B', 'L']
+moving 7 from 7 to 3
+amount is 7, source is ['H', 'D', 'T', 'W', 'C', 'W', 'H']
+target was ['V', 'C', 'Z', 'Z', 'S']
+draining H
+draining D
+draining T
+draining W
+draining C
+draining W
+draining H
+target is now ['V', 'C', 'Z', 'Z', 'S', 'H', 'D', 'T', 'W', 'C', 'W', 'H']
+moving 14 from 1 to 8
+amount is 14, source is ['M', 'F', 'T', 'D', 'S', 'N', 'W', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M', 'Z', 'Q', 'N', 'W', 'B']
+target was ['L', 'R', 'J', 'C', 'R', 'T']
+draining P
+draining J
+draining R
+draining L
+draining P
+draining P
+draining F
+draining F
+draining M
+draining Z
+draining Q
+draining N
+draining W
+draining B
+target is now ['L', 'R', 'J', 'C', 'R', 'T', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M', 'Z', 'Q', 'N', 'W', 'B']
+moving 5 from 4 to 2
+amount is 5, source is ['L', 'V', 'J', 'V', 'H']
+target was []
+draining L
+draining V
+draining J
+draining V
+draining H
+target is now ['L', 'V', 'J', 'V', 'H']
+moving 12 from 8 to 7
+amount is 12, source is ['L', 'R', 'J', 'C', 'R', 'T', 'P', 'J', 'R', 'L', 'P', 'P', 'F', 'F', 'M', 'Z', 'Q', 'N', 'W', 'B']
+target was []
+draining R
+draining L
+draining P
+draining P
+draining F
+draining F
+draining M
+draining Z
+draining Q
+draining N
+draining W
+draining B
+target is now ['R', 'L', 'P', 'P', 'F', 'F', 'M', 'Z', 'Q', 'N', 'W', 'B']
+moving 1 from 3 to 6
+amount is 1, source is ['V', 'C', 'Z', 'Z', 'S', 'H', 'D', 'T', 'W', 'C', 'W', 'H']
+target was []
+draining H
+target is now ['H']
+moving 3 from 5 to 9
+amount is 3, source is ['C', 'G', 'B', 'L']
+target was []
+draining G
+draining B
+draining L
+target is now ['G', 'B', 'L']
+moving 1 from 7 to 8
+amount is 1, source is ['R', 'L', 'P', 'P', 'F', 'F', 'M', 'Z', 'Q', 'N', 'W', 'B']
+target was ['L', 'R', 'J', 'C', 'R', 'T', 'P', 'J']
+draining B
+target is now ['L', 'R', 'J', 'C', 'R', 'T', 'P', 'J', 'B']
+moving 8 from 1 to 2
+amount is 8, source is ['M', 'F', 'T', 'D', 'S', 'N', 'W', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S']
+target was ['L', 'V', 'J', 'V', 'H']
+draining B
+draining L
+draining G
+draining C
+draining N
+draining F
+draining M
+draining S
+target is now ['L', 'V', 'J', 'V', 'H', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S']
+moving 5 from 1 to 2
+amount is 5, source is ['M', 'F', 'T', 'D', 'S', 'N', 'W']
+target was ['L', 'V', 'J', 'V', 'H', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S']
+draining T
+draining D
+draining S
+draining N
+draining W
+target is now ['L', 'V', 'J', 'V', 'H', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W']
+moving 9 from 3 to 4
+amount is 9, source is ['V', 'C', 'Z', 'Z', 'S', 'H', 'D', 'T', 'W', 'C', 'W']
+target was []
+draining Z
+draining Z
+draining S
+draining H
+draining D
+draining T
+draining W
+draining C
+draining W
+target is now ['Z', 'Z', 'S', 'H', 'D', 'T', 'W', 'C', 'W']
+moving 8 from 4 to 6
+amount is 8, source is ['Z', 'Z', 'S', 'H', 'D', 'T', 'W', 'C', 'W']
+target was ['H']
+draining Z
+draining S
+draining H
+draining D
+draining T
+draining W
+draining C
+draining W
+target is now ['H', 'Z', 'S', 'H', 'D', 'T', 'W', 'C', 'W']
+moving 2 from 1 to 9
+amount is 2, source is ['M', 'F']
+target was ['G', 'B', 'L']
+draining M
+draining F
+target is now ['G', 'B', 'L', 'M', 'F']
+moving 3 from 6 to 1
+amount is 3, source is ['H', 'Z', 'S', 'H', 'D', 'T', 'W', 'C', 'W']
+target was []
+draining W
+draining C
+draining W
+target is now ['W', 'C', 'W']
+moving 5 from 6 to 7
+amount is 5, source is ['H', 'Z', 'S', 'H', 'D', 'T']
+target was ['R', 'L', 'P', 'P', 'F', 'F', 'M', 'Z', 'Q', 'N', 'W']
+draining Z
+draining S
+draining H
+draining D
+draining T
+target is now ['R', 'L', 'P', 'P', 'F', 'F', 'M', 'Z', 'Q', 'N', 'W', 'Z', 'S', 'H', 'D', 'T']
+moving 14 from 7 to 1
+amount is 14, source is ['R', 'L', 'P', 'P', 'F', 'F', 'M', 'Z', 'Q', 'N', 'W', 'Z', 'S', 'H', 'D', 'T']
+target was ['W', 'C', 'W']
+draining P
+draining P
+draining F
+draining F
+draining M
+draining Z
+draining Q
+draining N
+draining W
+draining Z
+draining S
+draining H
+draining D
+draining T
+target is now ['W', 'C', 'W', 'P', 'P', 'F', 'F', 'M', 'Z', 'Q', 'N', 'W', 'Z', 'S', 'H', 'D', 'T']
+moving 1 from 4 to 7
+amount is 1, source is ['Z']
+target was ['R', 'L']
+draining Z
+target is now ['R', 'L', 'Z']
+moving 6 from 8 to 2
+amount is 6, source is ['L', 'R', 'J', 'C', 'R', 'T', 'P', 'J', 'B']
+target was ['L', 'V', 'J', 'V', 'H', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W']
+draining C
+draining R
+draining T
+draining P
+draining J
+draining B
+target is now ['L', 'V', 'J', 'V', 'H', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'P', 'J', 'B']
+moving 14 from 1 to 4
+amount is 14, source is ['W', 'C', 'W', 'P', 'P', 'F', 'F', 'M', 'Z', 'Q', 'N', 'W', 'Z', 'S', 'H', 'D', 'T']
+target was []
+draining P
+draining P
+draining F
+draining F
+draining M
+draining Z
+draining Q
+draining N
+draining W
+draining Z
+draining S
+draining H
+draining D
+draining T
+target is now ['P', 'P', 'F', 'F', 'M', 'Z', 'Q', 'N', 'W', 'Z', 'S', 'H', 'D', 'T']
+moving 13 from 4 to 9
+amount is 13, source is ['P', 'P', 'F', 'F', 'M', 'Z', 'Q', 'N', 'W', 'Z', 'S', 'H', 'D', 'T']
+target was ['G', 'B', 'L', 'M', 'F']
+draining P
+draining F
+draining F
+draining M
+draining Z
+draining Q
+draining N
+draining W
+draining Z
+draining S
+draining H
+draining D
+draining T
+target is now ['G', 'B', 'L', 'M', 'F', 'P', 'F', 'F', 'M', 'Z', 'Q', 'N', 'W', 'Z', 'S', 'H', 'D', 'T']
+moving 2 from 3 to 5
+amount is 2, source is ['V', 'C']
+target was ['C']
+draining V
+draining C
+target is now ['C', 'V', 'C']
+moving 3 from 1 to 7
+amount is 3, source is ['W', 'C', 'W']
+target was ['R', 'L', 'Z']
+draining W
+draining C
+draining W
+target is now ['R', 'L', 'Z', 'W', 'C', 'W']
+moving 1 from 8 to 4
+amount is 1, source is ['L', 'R', 'J']
+target was ['P']
+draining J
+target is now ['P', 'J']
+moving 1 from 4 to 1
+amount is 1, source is ['P', 'J']
+target was []
+draining J
+target is now ['J']
+moving 1 from 1 to 3
+amount is 1, source is ['J']
+target was []
+draining J
+target is now ['J']
+moving 1 from 3 to 4
+amount is 1, source is ['J']
+target was ['P']
+draining J
+target is now ['P', 'J']
+moving 1 from 4 to 1
+amount is 1, source is ['P', 'J']
+target was []
+draining J
+target is now ['J']
+moving 1 from 6 to 9
+amount is 1, source is ['H']
+target was ['G', 'B', 'L', 'M', 'F', 'P', 'F', 'F', 'M', 'Z', 'Q', 'N', 'W', 'Z', 'S', 'H', 'D', 'T']
+draining H
+target is now ['G', 'B', 'L', 'M', 'F', 'P', 'F', 'F', 'M', 'Z', 'Q', 'N', 'W', 'Z', 'S', 'H', 'D', 'T', 'H']
+moving 1 from 7 to 6
+amount is 1, source is ['R', 'L', 'Z', 'W', 'C', 'W']
+target was []
+draining W
+target is now ['W']
+moving 1 from 4 to 5
+amount is 1, source is ['P']
+target was ['C', 'V', 'C']
+draining P
+target is now ['C', 'V', 'C', 'P']
+moving 11 from 9 to 3
+amount is 11, source is ['G', 'B', 'L', 'M', 'F', 'P', 'F', 'F', 'M', 'Z', 'Q', 'N', 'W', 'Z', 'S', 'H', 'D', 'T', 'H']
+target was []
+draining M
+draining Z
+draining Q
+draining N
+draining W
+draining Z
+draining S
+draining H
+draining D
+draining T
+draining H
+target is now ['M', 'Z', 'Q', 'N', 'W', 'Z', 'S', 'H', 'D', 'T', 'H']
+moving 6 from 3 to 8
+amount is 6, source is ['M', 'Z', 'Q', 'N', 'W', 'Z', 'S', 'H', 'D', 'T', 'H']
+target was ['L', 'R']
+draining Z
+draining S
+draining H
+draining D
+draining T
+draining H
+target is now ['L', 'R', 'Z', 'S', 'H', 'D', 'T', 'H']
+moving 5 from 3 to 1
+amount is 5, source is ['M', 'Z', 'Q', 'N', 'W']
+target was ['J']
+draining M
+draining Z
+draining Q
+draining N
+draining W
+target is now ['J', 'M', 'Z', 'Q', 'N', 'W']
+moving 2 from 8 to 4
+amount is 2, source is ['L', 'R', 'Z', 'S', 'H', 'D', 'T', 'H']
+target was []
+draining T
+draining H
+target is now ['T', 'H']
+moving 1 from 6 to 2
+amount is 1, source is ['W']
+target was ['L', 'V', 'J', 'V', 'H', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'P', 'J', 'B']
+draining W
+target is now ['L', 'V', 'J', 'V', 'H', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'P', 'J', 'B', 'W']
+moving 7 from 9 to 2
+amount is 7, source is ['G', 'B', 'L', 'M', 'F', 'P', 'F', 'F']
+target was ['L', 'V', 'J', 'V', 'H', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'P', 'J', 'B', 'W']
+draining B
+draining L
+draining M
+draining F
+draining P
+draining F
+draining F
+target is now ['L', 'V', 'J', 'V', 'H', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'P', 'J', 'B', 'W', 'B', 'L', 'M', 'F', 'P', 'F', 'F']
+moving 1 from 7 to 2
+amount is 1, source is ['R', 'L', 'Z', 'W', 'C']
+target was ['L', 'V', 'J', 'V', 'H', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'P', 'J', 'B', 'W', 'B', 'L', 'M', 'F', 'P', 'F', 'F']
+draining C
+target is now ['L', 'V', 'J', 'V', 'H', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'P', 'J', 'B', 'W', 'B', 'L', 'M', 'F', 'P', 'F', 'F', 'C']
+moving 1 from 9 to 8
+amount is 1, source is ['G']
+target was ['L', 'R', 'Z', 'S', 'H', 'D']
+draining G
+target is now ['L', 'R', 'Z', 'S', 'H', 'D', 'G']
+moving 2 from 8 to 6
+amount is 2, source is ['L', 'R', 'Z', 'S', 'H', 'D', 'G']
+target was []
+draining D
+draining G
+target is now ['D', 'G']
+moving 30 from 2 to 3
+amount is 30, source is ['L', 'V', 'J', 'V', 'H', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'P', 'J', 'B', 'W', 'B', 'L', 'M', 'F', 'P', 'F', 'F', 'C']
+target was []
+draining V
+draining H
+draining B
+draining L
+draining G
+draining C
+draining N
+draining F
+draining M
+draining S
+draining T
+draining D
+draining S
+draining N
+draining W
+draining C
+draining R
+draining T
+draining P
+draining J
+draining B
+draining W
+draining B
+draining L
+draining M
+draining F
+draining P
+draining F
+draining F
+draining C
+target is now ['V', 'H', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'P', 'J', 'B', 'W', 'B', 'L', 'M', 'F', 'P', 'F', 'F', 'C']
+moving 2 from 7 to 2
+amount is 2, source is ['R', 'L', 'Z', 'W']
+target was ['L', 'V', 'J']
+draining Z
+draining W
+target is now ['L', 'V', 'J', 'Z', 'W']
+moving 2 from 8 to 2
+amount is 2, source is ['L', 'R', 'Z', 'S', 'H']
+target was ['L', 'V', 'J', 'Z', 'W']
+draining S
+draining H
+target is now ['L', 'V', 'J', 'Z', 'W', 'S', 'H']
+moving 3 from 8 to 7
+amount is 3, source is ['L', 'R', 'Z']
+target was ['R', 'L']
+draining L
+draining R
+draining Z
+target is now ['R', 'L', 'L', 'R', 'Z']
+moving 6 from 2 to 5
+amount is 6, source is ['L', 'V', 'J', 'Z', 'W', 'S', 'H']
+target was ['C', 'V', 'C', 'P']
+draining V
+draining J
+draining Z
+draining W
+draining S
+draining H
+target is now ['C', 'V', 'C', 'P', 'V', 'J', 'Z', 'W', 'S', 'H']
+moving 1 from 2 to 5
+amount is 1, source is ['L']
+target was ['C', 'V', 'C', 'P', 'V', 'J', 'Z', 'W', 'S', 'H']
+draining L
+target is now ['C', 'V', 'C', 'P', 'V', 'J', 'Z', 'W', 'S', 'H', 'L']
+moving 3 from 1 to 8
+amount is 3, source is ['J', 'M', 'Z', 'Q', 'N', 'W']
+target was []
+draining Q
+draining N
+draining W
+target is now ['Q', 'N', 'W']
+moving 2 from 6 to 7
+amount is 2, source is ['D', 'G']
+target was ['R', 'L', 'L', 'R', 'Z']
+draining D
+draining G
+target is now ['R', 'L', 'L', 'R', 'Z', 'D', 'G']
+moving 1 from 1 to 9
+amount is 1, source is ['J', 'M', 'Z']
+target was []
+draining Z
+target is now ['Z']
+moving 1 from 9 to 3
+amount is 1, source is ['Z']
+target was ['V', 'H', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'P', 'J', 'B', 'W', 'B', 'L', 'M', 'F', 'P', 'F', 'F', 'C']
+draining Z
+target is now ['V', 'H', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'P', 'J', 'B', 'W', 'B', 'L', 'M', 'F', 'P', 'F', 'F', 'C', 'Z']
+moving 7 from 3 to 1
+amount is 7, source is ['V', 'H', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'P', 'J', 'B', 'W', 'B', 'L', 'M', 'F', 'P', 'F', 'F', 'C', 'Z']
+target was ['J', 'M']
+draining M
+draining F
+draining P
+draining F
+draining F
+draining C
+draining Z
+target is now ['J', 'M', 'M', 'F', 'P', 'F', 'F', 'C', 'Z']
+moving 6 from 7 to 8
+amount is 6, source is ['R', 'L', 'L', 'R', 'Z', 'D', 'G']
+target was ['Q', 'N', 'W']
+draining L
+draining L
+draining R
+draining Z
+draining D
+draining G
+target is now ['Q', 'N', 'W', 'L', 'L', 'R', 'Z', 'D', 'G']
+moving 8 from 3 to 9
+amount is 8, source is ['V', 'H', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'P', 'J', 'B', 'W', 'B', 'L']
+target was []
+draining R
+draining T
+draining P
+draining J
+draining B
+draining W
+draining B
+draining L
+target is now ['R', 'T', 'P', 'J', 'B', 'W', 'B', 'L']
+moving 7 from 9 to 1
+amount is 7, source is ['R', 'T', 'P', 'J', 'B', 'W', 'B', 'L']
+target was ['J', 'M', 'M', 'F', 'P', 'F', 'F', 'C', 'Z']
+draining T
+draining P
+draining J
+draining B
+draining W
+draining B
+draining L
+target is now ['J', 'M', 'M', 'F', 'P', 'F', 'F', 'C', 'Z', 'T', 'P', 'J', 'B', 'W', 'B', 'L']
+moving 1 from 5 to 8
+amount is 1, source is ['C', 'V', 'C', 'P', 'V', 'J', 'Z', 'W', 'S', 'H', 'L']
+target was ['Q', 'N', 'W', 'L', 'L', 'R', 'Z', 'D', 'G']
+draining L
+target is now ['Q', 'N', 'W', 'L', 'L', 'R', 'Z', 'D', 'G', 'L']
+moving 7 from 5 to 9
+amount is 7, source is ['C', 'V', 'C', 'P', 'V', 'J', 'Z', 'W', 'S', 'H']
+target was ['R']
+draining P
+draining V
+draining J
+draining Z
+draining W
+draining S
+draining H
+target is now ['R', 'P', 'V', 'J', 'Z', 'W', 'S', 'H']
+moving 2 from 4 to 2
+amount is 2, source is ['T', 'H']
+target was []
+draining T
+draining H
+target is now ['T', 'H']
+moving 11 from 3 to 6
+amount is 11, source is ['V', 'H', 'B', 'L', 'G', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C']
+target was []
+draining C
+draining N
+draining F
+draining M
+draining S
+draining T
+draining D
+draining S
+draining N
+draining W
+draining C
+target is now ['C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C']
+moving 2 from 2 to 7
+amount is 2, source is ['T', 'H']
+target was ['R']
+draining T
+draining H
+target is now ['R', 'T', 'H']
+moving 11 from 1 to 8
+amount is 11, source is ['J', 'M', 'M', 'F', 'P', 'F', 'F', 'C', 'Z', 'T', 'P', 'J', 'B', 'W', 'B', 'L']
+target was ['Q', 'N', 'W', 'L', 'L', 'R', 'Z', 'D', 'G', 'L']
+draining F
+draining F
+draining C
+draining Z
+draining T
+draining P
+draining J
+draining B
+draining W
+draining B
+draining L
+target is now ['Q', 'N', 'W', 'L', 'L', 'R', 'Z', 'D', 'G', 'L', 'F', 'F', 'C', 'Z', 'T', 'P', 'J', 'B', 'W', 'B', 'L']
+moving 2 from 5 to 4
+amount is 2, source is ['C', 'V', 'C']
+target was []
+draining V
+draining C
+target is now ['V', 'C']
+moving 11 from 6 to 4
+amount is 11, source is ['C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C']
+target was ['V', 'C']
+draining C
+draining N
+draining F
+draining M
+draining S
+draining T
+draining D
+draining S
+draining N
+draining W
+draining C
+target is now ['V', 'C', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C']
+moving 12 from 4 to 9
+amount is 12, source is ['V', 'C', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C']
+target was ['R', 'P', 'V', 'J', 'Z', 'W', 'S', 'H']
+draining C
+draining C
+draining N
+draining F
+draining M
+draining S
+draining T
+draining D
+draining S
+draining N
+draining W
+draining C
+target is now ['R', 'P', 'V', 'J', 'Z', 'W', 'S', 'H', 'C', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C']
+moving 4 from 1 to 5
+amount is 4, source is ['J', 'M', 'M', 'F', 'P']
+target was ['C']
+draining M
+draining M
+draining F
+draining P
+target is now ['C', 'M', 'M', 'F', 'P']
+moving 3 from 7 to 9
+amount is 3, source is ['R', 'T', 'H']
+target was ['R', 'P', 'V', 'J', 'Z', 'W', 'S', 'H', 'C', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C']
+draining R
+draining T
+draining H
+target is now ['R', 'P', 'V', 'J', 'Z', 'W', 'S', 'H', 'C', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'H']
+moving 12 from 8 to 4
+amount is 12, source is ['Q', 'N', 'W', 'L', 'L', 'R', 'Z', 'D', 'G', 'L', 'F', 'F', 'C', 'Z', 'T', 'P', 'J', 'B', 'W', 'B', 'L']
+target was ['V']
+draining L
+draining F
+draining F
+draining C
+draining Z
+draining T
+draining P
+draining J
+draining B
+draining W
+draining B
+draining L
+target is now ['V', 'L', 'F', 'F', 'C', 'Z', 'T', 'P', 'J', 'B', 'W', 'B', 'L']
+moving 1 from 1 to 7
+amount is 1, source is ['J']
+target was []
+draining J
+target is now ['J']
+moving 6 from 8 to 3
+amount is 6, source is ['Q', 'N', 'W', 'L', 'L', 'R', 'Z', 'D', 'G']
+target was ['V', 'H', 'B', 'L', 'G']
+draining L
+draining L
+draining R
+draining Z
+draining D
+draining G
+target is now ['V', 'H', 'B', 'L', 'G', 'L', 'L', 'R', 'Z', 'D', 'G']
+moving 2 from 3 to 5
+amount is 2, source is ['V', 'H', 'B', 'L', 'G', 'L', 'L', 'R', 'Z', 'D', 'G']
+target was ['C', 'M', 'M', 'F', 'P']
+draining D
+draining G
+target is now ['C', 'M', 'M', 'F', 'P', 'D', 'G']
+moving 3 from 8 to 4
+amount is 3, source is ['Q', 'N', 'W']
+target was ['V', 'L', 'F', 'F', 'C', 'Z', 'T', 'P', 'J', 'B', 'W', 'B', 'L']
+draining Q
+draining N
+draining W
+target is now ['V', 'L', 'F', 'F', 'C', 'Z', 'T', 'P', 'J', 'B', 'W', 'B', 'L', 'Q', 'N', 'W']
+moving 3 from 3 to 7
+amount is 3, source is ['V', 'H', 'B', 'L', 'G', 'L', 'L', 'R', 'Z']
+target was ['J']
+draining L
+draining R
+draining Z
+target is now ['J', 'L', 'R', 'Z']
+moving 9 from 9 to 7
+amount is 9, source is ['R', 'P', 'V', 'J', 'Z', 'W', 'S', 'H', 'C', 'C', 'N', 'F', 'M', 'S', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'H']
+target was ['J', 'L', 'R', 'Z']
+draining T
+draining D
+draining S
+draining N
+draining W
+draining C
+draining R
+draining T
+draining H
+target is now ['J', 'L', 'R', 'Z', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'H']
+moving 5 from 3 to 9
+amount is 5, source is ['V', 'H', 'B', 'L', 'G', 'L']
+target was ['R', 'P', 'V', 'J', 'Z', 'W', 'S', 'H', 'C', 'C', 'N', 'F', 'M', 'S']
+draining H
+draining B
+draining L
+draining G
+draining L
+target is now ['R', 'P', 'V', 'J', 'Z', 'W', 'S', 'H', 'C', 'C', 'N', 'F', 'M', 'S', 'H', 'B', 'L', 'G', 'L']
+moving 1 from 3 to 2
+amount is 1, source is ['V']
+target was []
+draining V
+target is now ['V']
+moving 13 from 7 to 5
+amount is 13, source is ['J', 'L', 'R', 'Z', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'H']
+target was ['C', 'M', 'M', 'F', 'P', 'D', 'G']
+draining J
+draining L
+draining R
+draining Z
+draining T
+draining D
+draining S
+draining N
+draining W
+draining C
+draining R
+draining T
+draining H
+target is now ['C', 'M', 'M', 'F', 'P', 'D', 'G', 'J', 'L', 'R', 'Z', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'H']
+moving 1 from 2 to 6
+amount is 1, source is ['V']
+target was []
+draining V
+target is now ['V']
+moving 1 from 6 to 1
+amount is 1, source is ['V']
+target was []
+draining V
+target is now ['V']
+moving 1 from 1 to 6
+amount is 1, source is ['V']
+target was []
+draining V
+target is now ['V']
+moving 16 from 4 to 5
+amount is 16, source is ['V', 'L', 'F', 'F', 'C', 'Z', 'T', 'P', 'J', 'B', 'W', 'B', 'L', 'Q', 'N', 'W']
+target was ['C', 'M', 'M', 'F', 'P', 'D', 'G', 'J', 'L', 'R', 'Z', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'H']
+draining V
+draining L
+draining F
+draining F
+draining C
+draining Z
+draining T
+draining P
+draining J
+draining B
+draining W
+draining B
+draining L
+draining Q
+draining N
+draining W
+target is now ['C', 'M', 'M', 'F', 'P', 'D', 'G', 'J', 'L', 'R', 'Z', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'H', 'V', 'L', 'F', 'F', 'C', 'Z', 'T', 'P', 'J', 'B', 'W', 'B', 'L', 'Q', 'N', 'W']
+moving 1 from 5 to 6
+amount is 1, source is ['C', 'M', 'M', 'F', 'P', 'D', 'G', 'J', 'L', 'R', 'Z', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'H', 'V', 'L', 'F', 'F', 'C', 'Z', 'T', 'P', 'J', 'B', 'W', 'B', 'L', 'Q', 'N', 'W']
+target was ['V']
+draining W
+target is now ['V', 'W']
+moving 16 from 5 to 4
+amount is 16, source is ['C', 'M', 'M', 'F', 'P', 'D', 'G', 'J', 'L', 'R', 'Z', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'H', 'V', 'L', 'F', 'F', 'C', 'Z', 'T', 'P', 'J', 'B', 'W', 'B', 'L', 'Q', 'N']
+target was []
+draining H
+draining V
+draining L
+draining F
+draining F
+draining C
+draining Z
+draining T
+draining P
+draining J
+draining B
+draining W
+draining B
+draining L
+draining Q
+draining N
+target is now ['H', 'V', 'L', 'F', 'F', 'C', 'Z', 'T', 'P', 'J', 'B', 'W', 'B', 'L', 'Q', 'N']
+moving 13 from 4 to 5
+amount is 13, source is ['H', 'V', 'L', 'F', 'F', 'C', 'Z', 'T', 'P', 'J', 'B', 'W', 'B', 'L', 'Q', 'N']
+target was ['C', 'M', 'M', 'F', 'P', 'D', 'G', 'J', 'L', 'R', 'Z', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T']
+draining F
+draining F
+draining C
+draining Z
+draining T
+draining P
+draining J
+draining B
+draining W
+draining B
+draining L
+draining Q
+draining N
+target is now ['C', 'M', 'M', 'F', 'P', 'D', 'G', 'J', 'L', 'R', 'Z', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'P', 'J', 'B', 'W', 'B', 'L', 'Q', 'N']
+moving 3 from 4 to 2
+amount is 3, source is ['H', 'V', 'L']
+target was []
+draining H
+draining V
+draining L
+target is now ['H', 'V', 'L']
+moving 1 from 6 to 7
+amount is 1, source is ['V', 'W']
+target was []
+draining W
+target is now ['W']
+moving 3 from 2 to 1
+amount is 3, source is ['H', 'V', 'L']
+target was []
+draining H
+draining V
+draining L
+target is now ['H', 'V', 'L']
+moving 8 from 5 to 2
+amount is 8, source is ['C', 'M', 'M', 'F', 'P', 'D', 'G', 'J', 'L', 'R', 'Z', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'P', 'J', 'B', 'W', 'B', 'L', 'Q', 'N']
+target was []
+draining P
+draining J
+draining B
+draining W
+draining B
+draining L
+draining Q
+draining N
+target is now ['P', 'J', 'B', 'W', 'B', 'L', 'Q', 'N']
+moving 3 from 1 to 4
+amount is 3, source is ['H', 'V', 'L']
+target was []
+draining H
+draining V
+draining L
+target is now ['H', 'V', 'L']
+moving 1 from 7 to 9
+amount is 1, source is ['W']
+target was ['R', 'P', 'V', 'J', 'Z', 'W', 'S', 'H', 'C', 'C', 'N', 'F', 'M', 'S', 'H', 'B', 'L', 'G', 'L']
+draining W
+target is now ['R', 'P', 'V', 'J', 'Z', 'W', 'S', 'H', 'C', 'C', 'N', 'F', 'M', 'S', 'H', 'B', 'L', 'G', 'L', 'W']
+moving 14 from 5 to 1
+amount is 14, source is ['C', 'M', 'M', 'F', 'P', 'D', 'G', 'J', 'L', 'R', 'Z', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'F', 'F', 'C', 'Z', 'T']
+target was []
+draining Z
+draining T
+draining D
+draining S
+draining N
+draining W
+draining C
+draining R
+draining T
+draining F
+draining F
+draining C
+draining Z
+draining T
+target is now ['Z', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'F', 'F', 'C', 'Z', 'T']
+moving 10 from 1 to 5
+amount is 10, source is ['Z', 'T', 'D', 'S', 'N', 'W', 'C', 'R', 'T', 'F', 'F', 'C', 'Z', 'T']
+target was ['C', 'M', 'M', 'F', 'P', 'D', 'G', 'J', 'L', 'R']
+draining N
+draining W
+draining C
+draining R
+draining T
+draining F
+draining F
+draining C
+draining Z
+draining T
+target is now ['C', 'M', 'M', 'F', 'P', 'D', 'G', 'J', 'L', 'R', 'N', 'W', 'C', 'R', 'T', 'F', 'F', 'C', 'Z', 'T']
+moving 1 from 2 to 8
+amount is 1, source is ['P', 'J', 'B', 'W', 'B', 'L', 'Q', 'N']
+target was []
+draining N
+target is now ['N']
+moving 19 from 9 to 1
+amount is 19, source is ['R', 'P', 'V', 'J', 'Z', 'W', 'S', 'H', 'C', 'C', 'N', 'F', 'M', 'S', 'H', 'B', 'L', 'G', 'L', 'W']
+target was ['Z', 'T', 'D', 'S']
+draining P
+draining V
+draining J
+draining Z
+draining W
+draining S
+draining H
+draining C
+draining C
+draining N
+draining F
+draining M
+draining S
+draining H
+draining B
+draining L
+draining G
+draining L
+draining W
+target is now ['Z', 'T', 'D', 'S', 'P', 'V', 'J', 'Z', 'W', 'S', 'H', 'C', 'C', 'N', 'F', 'M', 'S', 'H', 'B', 'L', 'G', 'L', 'W']
+moving 1 from 9 to 1
+amount is 1, source is ['R']
+target was ['Z', 'T', 'D', 'S', 'P', 'V', 'J', 'Z', 'W', 'S', 'H', 'C', 'C', 'N', 'F', 'M', 'S', 'H', 'B', 'L', 'G', 'L', 'W']
+draining R
+target is now ['Z', 'T', 'D', 'S', 'P', 'V', 'J', 'Z', 'W', 'S', 'H', 'C', 'C', 'N', 'F', 'M', 'S', 'H', 'B', 'L', 'G', 'L', 'W', 'R']
+moving 6 from 2 to 7
+amount is 6, source is ['P', 'J', 'B', 'W', 'B', 'L', 'Q']
+target was []
+draining J
+draining B
+draining W
+draining B
+draining L
+draining Q
+target is now ['J', 'B', 'W', 'B', 'L', 'Q']
+moving 4 from 1 to 7
+amount is 4, source is ['Z', 'T', 'D', 'S', 'P', 'V', 'J', 'Z', 'W', 'S', 'H', 'C', 'C', 'N', 'F', 'M', 'S', 'H', 'B', 'L', 'G', 'L', 'W', 'R']
+target was ['J', 'B', 'W', 'B', 'L', 'Q']
+draining G
+draining L
+draining W
+draining R
+target is now ['J', 'B', 'W', 'B', 'L', 'Q', 'G', 'L', 'W', 'R']
+moving 1 from 8 to 6
+amount is 1, source is ['N']
+target was ['V']
+draining N
+target is now ['V', 'N']
+moving 16 from 5 to 3
+amount is 16, source is ['C', 'M', 'M', 'F', 'P', 'D', 'G', 'J', 'L', 'R', 'N', 'W', 'C', 'R', 'T', 'F', 'F', 'C', 'Z', 'T']
+target was []
+draining P
+draining D
+draining G
+draining J
+draining L
+draining R
+draining N
+draining W
+draining C
+draining R
+draining T
+draining F
+draining F
+draining C
+draining Z
+draining T
+target is now ['P', 'D', 'G', 'J', 'L', 'R', 'N', 'W', 'C', 'R', 'T', 'F', 'F', 'C', 'Z', 'T']
+moving 1 from 5 to 4
+amount is 1, source is ['C', 'M', 'M', 'F']
+target was ['H', 'V', 'L']
+draining F
+target is now ['H', 'V', 'L', 'F']
+moving 2 from 5 to 2
+amount is 2, source is ['C', 'M', 'M']
+target was ['P']
+draining M
+draining M
+target is now ['P', 'M', 'M']
+moving 1 from 5 to 6
+amount is 1, source is ['C']
+target was ['V', 'N']
+draining C
+target is now ['V', 'N', 'C']
+moving 1 from 6 to 5
+amount is 1, source is ['V', 'N', 'C']
+target was []
+draining C
+target is now ['C']
+moving 1 from 2 to 4
+amount is 1, source is ['P', 'M', 'M']
+target was ['H', 'V', 'L', 'F']
+draining M
+target is now ['H', 'V', 'L', 'F', 'M']
+moving 7 from 7 to 2
+amount is 7, source is ['J', 'B', 'W', 'B', 'L', 'Q', 'G', 'L', 'W', 'R']
+target was ['P', 'M']
+draining B
+draining L
+draining Q
+draining G
+draining L
+draining W
+draining R
+target is now ['P', 'M', 'B', 'L', 'Q', 'G', 'L', 'W', 'R']
+moving 4 from 4 to 7
+amount is 4, source is ['H', 'V', 'L', 'F', 'M']
+target was ['J', 'B', 'W']
+draining V
+draining L
+draining F
+draining M
+target is now ['J', 'B', 'W', 'V', 'L', 'F', 'M']
+moving 2 from 6 to 2
+amount is 2, source is ['V', 'N']
+target was ['P', 'M', 'B', 'L', 'Q', 'G', 'L', 'W', 'R']
+draining V
+draining N
+target is now ['P', 'M', 'B', 'L', 'Q', 'G', 'L', 'W', 'R', 'V', 'N']
+moving 8 from 2 to 9
+amount is 8, source is ['P', 'M', 'B', 'L', 'Q', 'G', 'L', 'W', 'R', 'V', 'N']
+target was []
+draining L
+draining Q
+draining G
+draining L
+draining W
+draining R
+draining V
+draining N
+target is now ['L', 'Q', 'G', 'L', 'W', 'R', 'V', 'N']
+moving 4 from 9 to 2
+amount is 4, source is ['L', 'Q', 'G', 'L', 'W', 'R', 'V', 'N']
+target was ['P', 'M', 'B']
+draining W
+draining R
+draining V
+draining N
+target is now ['P', 'M', 'B', 'W', 'R', 'V', 'N']
+moving 16 from 3 to 7
+amount is 16, source is ['P', 'D', 'G', 'J', 'L', 'R', 'N', 'W', 'C', 'R', 'T', 'F', 'F', 'C', 'Z', 'T']
+target was ['J', 'B', 'W', 'V', 'L', 'F', 'M']
+draining P
+draining D
+draining G
+draining J
+draining L
+draining R
+draining N
+draining W
+draining C
+draining R
+draining T
+draining F
+draining F
+draining C
+draining Z
+draining T
+target is now ['J', 'B', 'W', 'V', 'L', 'F', 'M', 'P', 'D', 'G', 'J', 'L', 'R', 'N', 'W', 'C', 'R', 'T', 'F', 'F', 'C', 'Z', 'T']
+moving 4 from 9 to 7
+amount is 4, source is ['L', 'Q', 'G', 'L']
+target was ['J', 'B', 'W', 'V', 'L', 'F', 'M', 'P', 'D', 'G', 'J', 'L', 'R', 'N', 'W', 'C', 'R', 'T', 'F', 'F', 'C', 'Z', 'T']
+draining L
+draining Q
+draining G
+draining L
+target is now ['J', 'B', 'W', 'V', 'L', 'F', 'M', 'P', 'D', 'G', 'J', 'L', 'R', 'N', 'W', 'C', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'G', 'L']
+moving 14 from 1 to 3
+amount is 14, source is ['Z', 'T', 'D', 'S', 'P', 'V', 'J', 'Z', 'W', 'S', 'H', 'C', 'C', 'N', 'F', 'M', 'S', 'H', 'B', 'L']
+target was []
+draining J
+draining Z
+draining W
+draining S
+draining H
+draining C
+draining C
+draining N
+draining F
+draining M
+draining S
+draining H
+draining B
+draining L
+target is now ['J', 'Z', 'W', 'S', 'H', 'C', 'C', 'N', 'F', 'M', 'S', 'H', 'B', 'L']
+moving 26 from 7 to 8
+amount is 26, source is ['J', 'B', 'W', 'V', 'L', 'F', 'M', 'P', 'D', 'G', 'J', 'L', 'R', 'N', 'W', 'C', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'G', 'L']
+target was []
+draining B
+draining W
+draining V
+draining L
+draining F
+draining M
+draining P
+draining D
+draining G
+draining J
+draining L
+draining R
+draining N
+draining W
+draining C
+draining R
+draining T
+draining F
+draining F
+draining C
+draining Z
+draining T
+draining L
+draining Q
+draining G
+draining L
+target is now ['B', 'W', 'V', 'L', 'F', 'M', 'P', 'D', 'G', 'J', 'L', 'R', 'N', 'W', 'C', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'G', 'L']
+moving 1 from 5 to 4
+amount is 1, source is ['C']
+target was ['H']
+draining C
+target is now ['H', 'C']
+moving 20 from 8 to 4
+amount is 20, source is ['B', 'W', 'V', 'L', 'F', 'M', 'P', 'D', 'G', 'J', 'L', 'R', 'N', 'W', 'C', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'G', 'L']
+target was ['H', 'C']
+draining P
+draining D
+draining G
+draining J
+draining L
+draining R
+draining N
+draining W
+draining C
+draining R
+draining T
+draining F
+draining F
+draining C
+draining Z
+draining T
+draining L
+draining Q
+draining G
+draining L
+target is now ['H', 'C', 'P', 'D', 'G', 'J', 'L', 'R', 'N', 'W', 'C', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'G', 'L']
+moving 5 from 1 to 8
+amount is 5, source is ['Z', 'T', 'D', 'S', 'P', 'V']
+target was ['B', 'W', 'V', 'L', 'F', 'M']
+draining T
+draining D
+draining S
+draining P
+draining V
+target is now ['B', 'W', 'V', 'L', 'F', 'M', 'T', 'D', 'S', 'P', 'V']
+moving 2 from 4 to 6
+amount is 2, source is ['H', 'C', 'P', 'D', 'G', 'J', 'L', 'R', 'N', 'W', 'C', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'G', 'L']
+target was []
+draining G
+draining L
+target is now ['G', 'L']
+moving 4 from 3 to 2
+amount is 4, source is ['J', 'Z', 'W', 'S', 'H', 'C', 'C', 'N', 'F', 'M', 'S', 'H', 'B', 'L']
+target was ['P', 'M', 'B', 'W', 'R', 'V', 'N']
+draining S
+draining H
+draining B
+draining L
+target is now ['P', 'M', 'B', 'W', 'R', 'V', 'N', 'S', 'H', 'B', 'L']
+moving 1 from 6 to 5
+amount is 1, source is ['G', 'L']
+target was []
+draining L
+target is now ['L']
+moving 8 from 2 to 4
+amount is 8, source is ['P', 'M', 'B', 'W', 'R', 'V', 'N', 'S', 'H', 'B', 'L']
+target was ['H', 'C', 'P', 'D', 'G', 'J', 'L', 'R', 'N', 'W', 'C', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q']
+draining W
+draining R
+draining V
+draining N
+draining S
+draining H
+draining B
+draining L
+target is now ['H', 'C', 'P', 'D', 'G', 'J', 'L', 'R', 'N', 'W', 'C', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'N', 'S', 'H', 'B', 'L']
+moving 1 from 6 to 5
+amount is 1, source is ['G']
+target was ['L']
+draining G
+target is now ['L', 'G']
+moving 1 from 7 to 8
+amount is 1, source is ['J']
+target was ['B', 'W', 'V', 'L', 'F', 'M', 'T', 'D', 'S', 'P', 'V']
+draining J
+target is now ['B', 'W', 'V', 'L', 'F', 'M', 'T', 'D', 'S', 'P', 'V', 'J']
+moving 8 from 3 to 1
+amount is 8, source is ['J', 'Z', 'W', 'S', 'H', 'C', 'C', 'N', 'F', 'M']
+target was ['Z']
+draining W
+draining S
+draining H
+draining C
+draining C
+draining N
+draining F
+draining M
+target is now ['Z', 'W', 'S', 'H', 'C', 'C', 'N', 'F', 'M']
+moving 6 from 1 to 9
+amount is 6, source is ['Z', 'W', 'S', 'H', 'C', 'C', 'N', 'F', 'M']
+target was []
+draining H
+draining C
+draining C
+draining N
+draining F
+draining M
+target is now ['H', 'C', 'C', 'N', 'F', 'M']
+moving 1 from 3 to 6
+amount is 1, source is ['J', 'Z']
+target was []
+draining Z
+target is now ['Z']
+moving 14 from 4 to 1
+amount is 14, source is ['H', 'C', 'P', 'D', 'G', 'J', 'L', 'R', 'N', 'W', 'C', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'N', 'S', 'H', 'B', 'L']
+target was ['Z', 'W', 'S']
+draining F
+draining C
+draining Z
+draining T
+draining L
+draining Q
+draining W
+draining R
+draining V
+draining N
+draining S
+draining H
+draining B
+draining L
+target is now ['Z', 'W', 'S', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'N', 'S', 'H', 'B', 'L']
+moving 1 from 3 to 8
+amount is 1, source is ['J']
+target was ['B', 'W', 'V', 'L', 'F', 'M', 'T', 'D', 'S', 'P', 'V', 'J']
+draining J
+target is now ['B', 'W', 'V', 'L', 'F', 'M', 'T', 'D', 'S', 'P', 'V', 'J', 'J']
+moving 2 from 2 to 1
+amount is 2, source is ['P', 'M', 'B']
+target was ['Z', 'W', 'S', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'N', 'S', 'H', 'B', 'L']
+draining M
+draining B
+target is now ['Z', 'W', 'S', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'N', 'S', 'H', 'B', 'L', 'M', 'B']
+moving 1 from 6 to 8
+amount is 1, source is ['Z']
+target was ['B', 'W', 'V', 'L', 'F', 'M', 'T', 'D', 'S', 'P', 'V', 'J', 'J']
+draining Z
+target is now ['B', 'W', 'V', 'L', 'F', 'M', 'T', 'D', 'S', 'P', 'V', 'J', 'J', 'Z']
+moving 1 from 2 to 8
+amount is 1, source is ['P']
+target was ['B', 'W', 'V', 'L', 'F', 'M', 'T', 'D', 'S', 'P', 'V', 'J', 'J', 'Z']
+draining P
+target is now ['B', 'W', 'V', 'L', 'F', 'M', 'T', 'D', 'S', 'P', 'V', 'J', 'J', 'Z', 'P']
+moving 5 from 8 to 1
+amount is 5, source is ['B', 'W', 'V', 'L', 'F', 'M', 'T', 'D', 'S', 'P', 'V', 'J', 'J', 'Z', 'P']
+target was ['Z', 'W', 'S', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'N', 'S', 'H', 'B', 'L', 'M', 'B']
+draining V
+draining J
+draining J
+draining Z
+draining P
+target is now ['Z', 'W', 'S', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'J', 'Z', 'P']
+moving 2 from 1 to 6
+amount is 2, source is ['Z', 'W', 'S', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'J', 'Z', 'P']
+target was []
+draining Z
+draining P
+target is now ['Z', 'P']
+moving 2 from 5 to 9
+amount is 2, source is ['L', 'G']
+target was ['H', 'C', 'C', 'N', 'F', 'M']
+draining L
+draining G
+target is now ['H', 'C', 'C', 'N', 'F', 'M', 'L', 'G']
+moving 1 from 6 to 3
+amount is 1, source is ['Z', 'P']
+target was []
+draining P
+target is now ['P']
+moving 1 from 6 to 1
+amount is 1, source is ['Z']
+target was ['Z', 'W', 'S', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'J']
+draining Z
+target is now ['Z', 'W', 'S', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'J', 'Z']
+moving 5 from 9 to 2
+amount is 5, source is ['H', 'C', 'C', 'N', 'F', 'M', 'L', 'G']
+target was []
+draining N
+draining F
+draining M
+draining L
+draining G
+target is now ['N', 'F', 'M', 'L', 'G']
+moving 5 from 4 to 1
+amount is 5, source is ['H', 'C', 'P', 'D', 'G', 'J', 'L', 'R', 'N', 'W', 'C', 'R', 'T', 'F']
+target was ['Z', 'W', 'S', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'J', 'Z']
+draining W
+draining C
+draining R
+draining T
+draining F
+target is now ['Z', 'W', 'S', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'J', 'Z', 'W', 'C', 'R', 'T', 'F']
+moving 5 from 4 to 2
+amount is 5, source is ['H', 'C', 'P', 'D', 'G', 'J', 'L', 'R', 'N']
+target was ['N', 'F', 'M', 'L', 'G']
+draining G
+draining J
+draining L
+draining R
+draining N
+target is now ['N', 'F', 'M', 'L', 'G', 'G', 'J', 'L', 'R', 'N']
+moving 16 from 1 to 8
+amount is 16, source is ['Z', 'W', 'S', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'J', 'Z', 'W', 'C', 'R', 'T', 'F']
+target was ['B', 'W', 'V', 'L', 'F', 'M', 'T', 'D', 'S', 'P']
+draining N
+draining S
+draining H
+draining B
+draining L
+draining M
+draining B
+draining V
+draining J
+draining J
+draining Z
+draining W
+draining C
+draining R
+draining T
+draining F
+target is now ['B', 'W', 'V', 'L', 'F', 'M', 'T', 'D', 'S', 'P', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'J', 'Z', 'W', 'C', 'R', 'T', 'F']
+moving 9 from 1 to 4
+amount is 9, source is ['Z', 'W', 'S', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V']
+target was ['H', 'C', 'P', 'D']
+draining F
+draining C
+draining Z
+draining T
+draining L
+draining Q
+draining W
+draining R
+draining V
+target is now ['H', 'C', 'P', 'D', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V']
+moving 24 from 8 to 6
+amount is 24, source is ['B', 'W', 'V', 'L', 'F', 'M', 'T', 'D', 'S', 'P', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'J', 'Z', 'W', 'C', 'R', 'T', 'F']
+target was []
+draining V
+draining L
+draining F
+draining M
+draining T
+draining D
+draining S
+draining P
+draining N
+draining S
+draining H
+draining B
+draining L
+draining M
+draining B
+draining V
+draining J
+draining J
+draining Z
+draining W
+draining C
+draining R
+draining T
+draining F
+target is now ['V', 'L', 'F', 'M', 'T', 'D', 'S', 'P', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'J', 'Z', 'W', 'C', 'R', 'T', 'F']
+moving 1 from 8 to 7
+amount is 1, source is ['B', 'W']
+target was []
+draining W
+target is now ['W']
+moving 7 from 6 to 5
+amount is 7, source is ['V', 'L', 'F', 'M', 'T', 'D', 'S', 'P', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'J', 'Z', 'W', 'C', 'R', 'T', 'F']
+target was []
+draining J
+draining Z
+draining W
+draining C
+draining R
+draining T
+draining F
+target is now ['J', 'Z', 'W', 'C', 'R', 'T', 'F']
+moving 1 from 3 to 4
+amount is 1, source is ['P']
+target was ['H', 'C', 'P', 'D', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V']
+draining P
+target is now ['H', 'C', 'P', 'D', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P']
+moving 3 from 1 to 8
+amount is 3, source is ['Z', 'W', 'S']
+target was ['B']
+draining Z
+draining W
+draining S
+target is now ['B', 'Z', 'W', 'S']
+moving 3 from 5 to 8
+amount is 3, source is ['J', 'Z', 'W', 'C', 'R', 'T', 'F']
+target was ['B', 'Z', 'W', 'S']
+draining R
+draining T
+draining F
+target is now ['B', 'Z', 'W', 'S', 'R', 'T', 'F']
+moving 10 from 4 to 8
+amount is 10, source is ['H', 'C', 'P', 'D', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P']
+target was ['B', 'Z', 'W', 'S', 'R', 'T', 'F']
+draining F
+draining C
+draining Z
+draining T
+draining L
+draining Q
+draining W
+draining R
+draining V
+draining P
+target is now ['B', 'Z', 'W', 'S', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P']
+moving 3 from 4 to 6
+amount is 3, source is ['H', 'C', 'P', 'D']
+target was ['V', 'L', 'F', 'M', 'T', 'D', 'S', 'P', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J']
+draining C
+draining P
+draining D
+target is now ['V', 'L', 'F', 'M', 'T', 'D', 'S', 'P', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'C', 'P', 'D']
+moving 1 from 7 to 4
+amount is 1, source is ['W']
+target was ['H']
+draining W
+target is now ['H', 'W']
+moving 20 from 6 to 7
+amount is 20, source is ['V', 'L', 'F', 'M', 'T', 'D', 'S', 'P', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'C', 'P', 'D']
+target was []
+draining V
+draining L
+draining F
+draining M
+draining T
+draining D
+draining S
+draining P
+draining N
+draining S
+draining H
+draining B
+draining L
+draining M
+draining B
+draining V
+draining J
+draining C
+draining P
+draining D
+target is now ['V', 'L', 'F', 'M', 'T', 'D', 'S', 'P', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'C', 'P', 'D']
+moving 1 from 4 to 9
+amount is 1, source is ['H', 'W']
+target was ['H', 'C', 'C']
+draining W
+target is now ['H', 'C', 'C', 'W']
+moving 1 from 4 to 9
+amount is 1, source is ['H']
+target was ['H', 'C', 'C', 'W']
+draining H
+target is now ['H', 'C', 'C', 'W', 'H']
+moving 7 from 2 to 3
+amount is 7, source is ['N', 'F', 'M', 'L', 'G', 'G', 'J', 'L', 'R', 'N']
+target was []
+draining L
+draining G
+draining G
+draining J
+draining L
+draining R
+draining N
+target is now ['L', 'G', 'G', 'J', 'L', 'R', 'N']
+moving 13 from 8 to 9
+amount is 13, source is ['B', 'Z', 'W', 'S', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P']
+target was ['H', 'C', 'C', 'W', 'H']
+draining R
+draining T
+draining F
+draining F
+draining C
+draining Z
+draining T
+draining L
+draining Q
+draining W
+draining R
+draining V
+draining P
+target is now ['H', 'C', 'C', 'W', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P']
+moving 4 from 5 to 9
+amount is 4, source is ['J', 'Z', 'W', 'C']
+target was ['H', 'C', 'C', 'W', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P']
+draining J
+draining Z
+draining W
+draining C
+target is now ['H', 'C', 'C', 'W', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'Z', 'W', 'C']
+moving 4 from 8 to 5
+amount is 4, source is ['B', 'Z', 'W', 'S']
+target was []
+draining B
+draining Z
+draining W
+draining S
+target is now ['B', 'Z', 'W', 'S']
+moving 18 from 9 to 2
+amount is 18, source is ['H', 'C', 'C', 'W', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'Z', 'W', 'C']
+target was ['N', 'F', 'M']
+draining H
+draining R
+draining T
+draining F
+draining F
+draining C
+draining Z
+draining T
+draining L
+draining Q
+draining W
+draining R
+draining V
+draining P
+draining J
+draining Z
+draining W
+draining C
+target is now ['N', 'F', 'M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'Z', 'W', 'C']
+moving 14 from 7 to 5
+amount is 14, source is ['V', 'L', 'F', 'M', 'T', 'D', 'S', 'P', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'C', 'P', 'D']
+target was ['B', 'Z', 'W', 'S']
+draining S
+draining P
+draining N
+draining S
+draining H
+draining B
+draining L
+draining M
+draining B
+draining V
+draining J
+draining C
+draining P
+draining D
+target is now ['B', 'Z', 'W', 'S', 'S', 'P', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'C', 'P', 'D']
+moving 6 from 3 to 8
+amount is 6, source is ['L', 'G', 'G', 'J', 'L', 'R', 'N']
+target was []
+draining G
+draining G
+draining J
+draining L
+draining R
+draining N
+target is now ['G', 'G', 'J', 'L', 'R', 'N']
+moving 1 from 3 to 2
+amount is 1, source is ['L']
+target was ['N', 'F', 'M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'Z', 'W', 'C']
+draining L
+target is now ['N', 'F', 'M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'Z', 'W', 'C', 'L']
+moving 1 from 8 to 6
+amount is 1, source is ['G', 'G', 'J', 'L', 'R', 'N']
+target was []
+draining N
+target is now ['N']
+moving 4 from 8 to 2
+amount is 4, source is ['G', 'G', 'J', 'L', 'R']
+target was ['N', 'F', 'M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'Z', 'W', 'C', 'L']
+draining G
+draining J
+draining L
+draining R
+target is now ['N', 'F', 'M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'R']
+moving 1 from 2 to 3
+amount is 1, source is ['N', 'F', 'M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'R']
+target was []
+draining R
+target is now ['R']
+moving 17 from 5 to 3
+amount is 17, source is ['B', 'Z', 'W', 'S', 'S', 'P', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'C', 'P', 'D']
+target was ['R']
+draining Z
+draining W
+draining S
+draining S
+draining P
+draining N
+draining S
+draining H
+draining B
+draining L
+draining M
+draining B
+draining V
+draining J
+draining C
+draining P
+draining D
+target is now ['R', 'Z', 'W', 'S', 'S', 'P', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'C', 'P', 'D']
+moving 18 from 3 to 5
+amount is 18, source is ['R', 'Z', 'W', 'S', 'S', 'P', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'C', 'P', 'D']
+target was ['B']
+draining R
+draining Z
+draining W
+draining S
+draining S
+draining P
+draining N
+draining S
+draining H
+draining B
+draining L
+draining M
+draining B
+draining V
+draining J
+draining C
+draining P
+draining D
+target is now ['B', 'R', 'Z', 'W', 'S', 'S', 'P', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'C', 'P', 'D']
+moving 6 from 7 to 2
+amount is 6, source is ['V', 'L', 'F', 'M', 'T', 'D']
+target was ['N', 'F', 'M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'Z', 'W', 'C', 'L', 'G', 'J', 'L']
+draining V
+draining L
+draining F
+draining M
+draining T
+draining D
+target is now ['N', 'F', 'M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'L', 'F', 'M', 'T', 'D']
+moving 3 from 9 to 7
+amount is 3, source is ['H', 'C', 'C', 'W']
+target was []
+draining C
+draining C
+draining W
+target is now ['C', 'C', 'W']
+moving 1 from 8 to 6
+amount is 1, source is ['G']
+target was ['N']
+draining G
+target is now ['N', 'G']
+moving 5 from 2 to 5
+amount is 5, source is ['N', 'F', 'M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'L', 'F', 'M', 'T', 'D']
+target was ['B', 'R', 'Z', 'W', 'S', 'S', 'P', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'C', 'P', 'D']
+draining L
+draining F
+draining M
+draining T
+draining D
+target is now ['B', 'R', 'Z', 'W', 'S', 'S', 'P', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'C', 'P', 'D', 'L', 'F', 'M', 'T', 'D']
+moving 26 from 2 to 7
+amount is 26, source is ['N', 'F', 'M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V']
+target was ['C', 'C', 'W']
+draining N
+draining F
+draining M
+draining H
+draining R
+draining T
+draining F
+draining F
+draining C
+draining Z
+draining T
+draining L
+draining Q
+draining W
+draining R
+draining V
+draining P
+draining J
+draining Z
+draining W
+draining C
+draining L
+draining G
+draining J
+draining L
+draining V
+target is now ['C', 'C', 'W', 'N', 'F', 'M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V']
+moving 1 from 6 to 9
+amount is 1, source is ['N', 'G']
+target was ['H']
+draining G
+target is now ['H', 'G']
+moving 29 from 7 to 9
+amount is 29, source is ['C', 'C', 'W', 'N', 'F', 'M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V']
+target was ['H', 'G']
+draining C
+draining C
+draining W
+draining N
+draining F
+draining M
+draining H
+draining R
+draining T
+draining F
+draining F
+draining C
+draining Z
+draining T
+draining L
+draining Q
+draining W
+draining R
+draining V
+draining P
+draining J
+draining Z
+draining W
+draining C
+draining L
+draining G
+draining J
+draining L
+draining V
+target is now ['H', 'G', 'C', 'C', 'W', 'N', 'F', 'M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V']
+moving 15 from 5 to 2
+amount is 15, source is ['B', 'R', 'Z', 'W', 'S', 'S', 'P', 'N', 'S', 'H', 'B', 'L', 'M', 'B', 'V', 'J', 'C', 'P', 'D', 'L', 'F', 'M', 'T', 'D']
+target was []
+draining H
+draining B
+draining L
+draining M
+draining B
+draining V
+draining J
+draining C
+draining P
+draining D
+draining L
+draining F
+draining M
+draining T
+draining D
+target is now ['H', 'B', 'L', 'M', 'B', 'V', 'J', 'C', 'P', 'D', 'L', 'F', 'M', 'T', 'D']
+moving 1 from 6 to 7
+amount is 1, source is ['N']
+target was []
+draining N
+target is now ['N']
+moving 8 from 9 to 2
+amount is 8, source is ['H', 'G', 'C', 'C', 'W', 'N', 'F', 'M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V']
+target was ['H', 'B', 'L', 'M', 'B', 'V', 'J', 'C', 'P', 'D', 'L', 'F', 'M', 'T', 'D']
+draining Z
+draining W
+draining C
+draining L
+draining G
+draining J
+draining L
+draining V
+target is now ['H', 'B', 'L', 'M', 'B', 'V', 'J', 'C', 'P', 'D', 'L', 'F', 'M', 'T', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V']
+moving 14 from 2 to 6
+amount is 14, source is ['H', 'B', 'L', 'M', 'B', 'V', 'J', 'C', 'P', 'D', 'L', 'F', 'M', 'T', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V']
+target was []
+draining D
+draining L
+draining F
+draining M
+draining T
+draining D
+draining Z
+draining W
+draining C
+draining L
+draining G
+draining J
+draining L
+draining V
+target is now ['D', 'L', 'F', 'M', 'T', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V']
+moving 16 from 9 to 1
+amount is 16, source is ['H', 'G', 'C', 'C', 'W', 'N', 'F', 'M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J']
+target was []
+draining M
+draining H
+draining R
+draining T
+draining F
+draining F
+draining C
+draining Z
+draining T
+draining L
+draining Q
+draining W
+draining R
+draining V
+draining P
+draining J
+target is now ['M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J']
+moving 6 from 9 to 1
+amount is 6, source is ['H', 'G', 'C', 'C', 'W', 'N', 'F']
+target was ['M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J']
+draining G
+draining C
+draining C
+draining W
+draining N
+draining F
+target is now ['M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'G', 'C', 'C', 'W', 'N', 'F']
+moving 1 from 7 to 1
+amount is 1, source is ['N']
+target was ['M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'G', 'C', 'C', 'W', 'N', 'F']
+draining N
+target is now ['M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'G', 'C', 'C', 'W', 'N', 'F', 'N']
+moving 3 from 2 to 1
+amount is 3, source is ['H', 'B', 'L', 'M', 'B', 'V', 'J', 'C', 'P']
+target was ['M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'G', 'C', 'C', 'W', 'N', 'F', 'N']
+draining J
+draining C
+draining P
+target is now ['M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'G', 'C', 'C', 'W', 'N', 'F', 'N', 'J', 'C', 'P']
+moving 5 from 2 to 6
+amount is 5, source is ['H', 'B', 'L', 'M', 'B', 'V']
+target was ['D', 'L', 'F', 'M', 'T', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V']
+draining B
+draining L
+draining M
+draining B
+draining V
+target is now ['D', 'L', 'F', 'M', 'T', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V']
+moving 15 from 1 to 4
+amount is 15, source is ['M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q', 'W', 'R', 'V', 'P', 'J', 'G', 'C', 'C', 'W', 'N', 'F', 'N', 'J', 'C', 'P']
+target was []
+draining W
+draining R
+draining V
+draining P
+draining J
+draining G
+draining C
+draining C
+draining W
+draining N
+draining F
+draining N
+draining J
+draining C
+draining P
+target is now ['W', 'R', 'V', 'P', 'J', 'G', 'C', 'C', 'W', 'N', 'F', 'N', 'J', 'C', 'P']
+moving 1 from 2 to 8
+amount is 1, source is ['H']
+target was []
+draining H
+target is now ['H']
+moving 1 from 9 to 7
+amount is 1, source is ['H']
+target was []
+draining H
+target is now ['H']
+moving 1 from 8 to 6
+amount is 1, source is ['H']
+target was ['D', 'L', 'F', 'M', 'T', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V']
+draining H
+target is now ['D', 'L', 'F', 'M', 'T', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V', 'H']
+moving 19 from 6 to 7
+amount is 19, source is ['D', 'L', 'F', 'M', 'T', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V', 'H']
+target was ['H']
+draining L
+draining F
+draining M
+draining T
+draining D
+draining Z
+draining W
+draining C
+draining L
+draining G
+draining J
+draining L
+draining V
+draining B
+draining L
+draining M
+draining B
+draining V
+draining H
+target is now ['H', 'L', 'F', 'M', 'T', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V', 'H']
+moving 10 from 1 to 8
+amount is 10, source is ['M', 'H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q']
+target was []
+draining H
+draining R
+draining T
+draining F
+draining F
+draining C
+draining Z
+draining T
+draining L
+draining Q
+target is now ['H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q']
+moving 4 from 8 to 3
+amount is 4, source is ['H', 'R', 'T', 'F', 'F', 'C', 'Z', 'T', 'L', 'Q']
+target was []
+draining Z
+draining T
+draining L
+draining Q
+target is now ['Z', 'T', 'L', 'Q']
+moving 1 from 7 to 5
+amount is 1, source is ['H', 'L', 'F', 'M', 'T', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V', 'H']
+target was ['B', 'R', 'Z', 'W', 'S', 'S', 'P', 'N', 'S']
+draining H
+target is now ['B', 'R', 'Z', 'W', 'S', 'S', 'P', 'N', 'S', 'H']
+moving 3 from 5 to 3
+amount is 3, source is ['B', 'R', 'Z', 'W', 'S', 'S', 'P', 'N', 'S', 'H']
+target was ['Z', 'T', 'L', 'Q']
+draining N
+draining S
+draining H
+target is now ['Z', 'T', 'L', 'Q', 'N', 'S', 'H']
+moving 13 from 7 to 6
+amount is 13, source is ['H', 'L', 'F', 'M', 'T', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V']
+target was ['D']
+draining Z
+draining W
+draining C
+draining L
+draining G
+draining J
+draining L
+draining V
+draining B
+draining L
+draining M
+draining B
+draining V
+target is now ['D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V']
+moving 2 from 8 to 9
+amount is 2, source is ['H', 'R', 'T', 'F', 'F', 'C']
+target was []
+draining F
+draining C
+target is now ['F', 'C']
+moving 7 from 3 to 6
+amount is 7, source is ['Z', 'T', 'L', 'Q', 'N', 'S', 'H']
+target was ['D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V']
+draining Z
+draining T
+draining L
+draining Q
+draining N
+draining S
+draining H
+target is now ['D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V', 'Z', 'T', 'L', 'Q', 'N', 'S', 'H']
+moving 5 from 5 to 3
+amount is 5, source is ['B', 'R', 'Z', 'W', 'S', 'S', 'P']
+target was []
+draining Z
+draining W
+draining S
+draining S
+draining P
+target is now ['Z', 'W', 'S', 'S', 'P']
+moving 1 from 1 to 6
+amount is 1, source is ['M']
+target was ['D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V', 'Z', 'T', 'L', 'Q', 'N', 'S', 'H']
+draining M
+target is now ['D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V', 'Z', 'T', 'L', 'Q', 'N', 'S', 'H', 'M']
+moving 2 from 5 to 1
+amount is 2, source is ['B', 'R']
+target was []
+draining B
+draining R
+target is now ['B', 'R']
+moving 4 from 4 to 8
+amount is 4, source is ['W', 'R', 'V', 'P', 'J', 'G', 'C', 'C', 'W', 'N', 'F', 'N', 'J', 'C', 'P']
+target was ['H', 'R', 'T', 'F']
+draining N
+draining J
+draining C
+draining P
+target is now ['H', 'R', 'T', 'F', 'N', 'J', 'C', 'P']
+moving 7 from 8 to 7
+amount is 7, source is ['H', 'R', 'T', 'F', 'N', 'J', 'C', 'P']
+target was ['H', 'L', 'F', 'M', 'T', 'D']
+draining R
+draining T
+draining F
+draining N
+draining J
+draining C
+draining P
+target is now ['H', 'L', 'F', 'M', 'T', 'D', 'R', 'T', 'F', 'N', 'J', 'C', 'P']
+moving 8 from 7 to 3
+amount is 8, source is ['H', 'L', 'F', 'M', 'T', 'D', 'R', 'T', 'F', 'N', 'J', 'C', 'P']
+target was ['Z', 'W', 'S', 'S', 'P']
+draining D
+draining R
+draining T
+draining F
+draining N
+draining J
+draining C
+draining P
+target is now ['Z', 'W', 'S', 'S', 'P', 'D', 'R', 'T', 'F', 'N', 'J', 'C', 'P']
+moving 1 from 8 to 4
+amount is 1, source is ['H']
+target was ['W', 'R', 'V', 'P', 'J', 'G', 'C', 'C', 'W', 'N', 'F']
+draining H
+target is now ['W', 'R', 'V', 'P', 'J', 'G', 'C', 'C', 'W', 'N', 'F', 'H']
+moving 2 from 9 to 2
+amount is 2, source is ['F', 'C']
+target was []
+draining F
+draining C
+target is now ['F', 'C']
+moving 8 from 6 to 5
+amount is 8, source is ['D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V', 'Z', 'T', 'L', 'Q', 'N', 'S', 'H', 'M']
+target was []
+draining Z
+draining T
+draining L
+draining Q
+draining N
+draining S
+draining H
+draining M
+target is now ['Z', 'T', 'L', 'Q', 'N', 'S', 'H', 'M']
+moving 1 from 4 to 5
+amount is 1, source is ['W', 'R', 'V', 'P', 'J', 'G', 'C', 'C', 'W', 'N', 'F', 'H']
+target was ['Z', 'T', 'L', 'Q', 'N', 'S', 'H', 'M']
+draining H
+target is now ['Z', 'T', 'L', 'Q', 'N', 'S', 'H', 'M', 'H']
+moving 4 from 5 to 4
+amount is 4, source is ['Z', 'T', 'L', 'Q', 'N', 'S', 'H', 'M', 'H']
+target was ['W', 'R', 'V', 'P', 'J', 'G', 'C', 'C', 'W', 'N', 'F']
+draining S
+draining H
+draining M
+draining H
+target is now ['W', 'R', 'V', 'P', 'J', 'G', 'C', 'C', 'W', 'N', 'F', 'S', 'H', 'M', 'H']
+moving 2 from 2 to 8
+amount is 2, source is ['F', 'C']
+target was []
+draining F
+draining C
+target is now ['F', 'C']
+moving 9 from 4 to 5
+amount is 9, source is ['W', 'R', 'V', 'P', 'J', 'G', 'C', 'C', 'W', 'N', 'F', 'S', 'H', 'M', 'H']
+target was ['Z', 'T', 'L', 'Q', 'N']
+draining C
+draining C
+draining W
+draining N
+draining F
+draining S
+draining H
+draining M
+draining H
+target is now ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'W', 'N', 'F', 'S', 'H', 'M', 'H']
+moving 2 from 1 to 9
+amount is 2, source is ['B', 'R']
+target was []
+draining B
+draining R
+target is now ['B', 'R']
+moving 2 from 8 to 9
+amount is 2, source is ['F', 'C']
+target was ['B', 'R']
+draining F
+draining C
+target is now ['B', 'R', 'F', 'C']
+moving 14 from 6 to 4
+amount is 14, source is ['D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V']
+target was ['W', 'R', 'V', 'P', 'J', 'G']
+draining D
+draining Z
+draining W
+draining C
+draining L
+draining G
+draining J
+draining L
+draining V
+draining B
+draining L
+draining M
+draining B
+draining V
+target is now ['W', 'R', 'V', 'P', 'J', 'G', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V']
+moving 5 from 3 to 4
+amount is 5, source is ['Z', 'W', 'S', 'S', 'P', 'D', 'R', 'T', 'F', 'N', 'J', 'C', 'P']
+target was ['W', 'R', 'V', 'P', 'J', 'G', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V']
+draining F
+draining N
+draining J
+draining C
+draining P
+target is now ['W', 'R', 'V', 'P', 'J', 'G', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V', 'F', 'N', 'J', 'C', 'P']
+moving 3 from 9 to 7
+amount is 3, source is ['B', 'R', 'F', 'C']
+target was ['H', 'L', 'F', 'M', 'T']
+draining R
+draining F
+draining C
+target is now ['H', 'L', 'F', 'M', 'T', 'R', 'F', 'C']
+moving 3 from 5 to 3
+amount is 3, source is ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'W', 'N', 'F', 'S', 'H', 'M', 'H']
+target was ['Z', 'W', 'S', 'S', 'P', 'D', 'R', 'T']
+draining H
+draining M
+draining H
+target is now ['Z', 'W', 'S', 'S', 'P', 'D', 'R', 'T', 'H', 'M', 'H']
+moving 2 from 4 to 8
+amount is 2, source is ['W', 'R', 'V', 'P', 'J', 'G', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V', 'F', 'N', 'J', 'C', 'P']
+target was []
+draining C
+draining P
+target is now ['C', 'P']
+moving 2 from 4 to 7
+amount is 2, source is ['W', 'R', 'V', 'P', 'J', 'G', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V', 'F', 'N', 'J']
+target was ['H', 'L', 'F', 'M', 'T', 'R', 'F', 'C']
+draining N
+draining J
+target is now ['H', 'L', 'F', 'M', 'T', 'R', 'F', 'C', 'N', 'J']
+moving 2 from 8 to 9
+amount is 2, source is ['C', 'P']
+target was ['B']
+draining C
+draining P
+target is now ['B', 'C', 'P']
+moving 4 from 5 to 8
+amount is 4, source is ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'W', 'N', 'F', 'S']
+target was []
+draining W
+draining N
+draining F
+draining S
+target is now ['W', 'N', 'F', 'S']
+moving 16 from 4 to 6
+amount is 16, source is ['W', 'R', 'V', 'P', 'J', 'G', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V', 'F']
+target was []
+draining G
+draining D
+draining Z
+draining W
+draining C
+draining L
+draining G
+draining J
+draining L
+draining V
+draining B
+draining L
+draining M
+draining B
+draining V
+draining F
+target is now ['G', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V', 'F']
+moving 1 from 9 to 6
+amount is 1, source is ['B', 'C', 'P']
+target was ['G', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V', 'F']
+draining P
+target is now ['G', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V', 'F', 'P']
+moving 3 from 7 to 5
+amount is 3, source is ['H', 'L', 'F', 'M', 'T', 'R', 'F', 'C', 'N', 'J']
+target was ['Z', 'T', 'L', 'Q', 'N', 'C', 'C']
+draining C
+draining N
+draining J
+target is now ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'C', 'N', 'J']
+moving 7 from 7 to 5
+amount is 7, source is ['H', 'L', 'F', 'M', 'T', 'R', 'F']
+target was ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'C', 'N', 'J']
+draining H
+draining L
+draining F
+draining M
+draining T
+draining R
+draining F
+target is now ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'C', 'N', 'J', 'H', 'L', 'F', 'M', 'T', 'R', 'F']
+moving 10 from 5 to 1
+amount is 10, source is ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'C', 'N', 'J', 'H', 'L', 'F', 'M', 'T', 'R', 'F']
+target was []
+draining C
+draining N
+draining J
+draining H
+draining L
+draining F
+draining M
+draining T
+draining R
+draining F
+target is now ['C', 'N', 'J', 'H', 'L', 'F', 'M', 'T', 'R', 'F']
+moving 6 from 3 to 8
+amount is 6, source is ['Z', 'W', 'S', 'S', 'P', 'D', 'R', 'T', 'H', 'M', 'H']
+target was ['W', 'N', 'F', 'S']
+draining D
+draining R
+draining T
+draining H
+draining M
+draining H
+target is now ['W', 'N', 'F', 'S', 'D', 'R', 'T', 'H', 'M', 'H']
+moving 2 from 9 to 3
+amount is 2, source is ['B', 'C']
+target was ['Z', 'W', 'S', 'S', 'P']
+draining B
+draining C
+target is now ['Z', 'W', 'S', 'S', 'P', 'B', 'C']
+moving 3 from 6 to 9
+amount is 3, source is ['G', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'V', 'F', 'P']
+target was []
+draining V
+draining F
+draining P
+target is now ['V', 'F', 'P']
+moving 3 from 3 to 6
+amount is 3, source is ['Z', 'W', 'S', 'S', 'P', 'B', 'C']
+target was ['G', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B']
+draining P
+draining B
+draining C
+target is now ['G', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'P', 'B', 'C']
+moving 2 from 1 to 7
+amount is 2, source is ['C', 'N', 'J', 'H', 'L', 'F', 'M', 'T', 'R', 'F']
+target was []
+draining R
+draining F
+target is now ['R', 'F']
+moving 13 from 6 to 2
+amount is 13, source is ['G', 'D', 'Z', 'W', 'C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'P', 'B', 'C']
+target was []
+draining C
+draining L
+draining G
+draining J
+draining L
+draining V
+draining B
+draining L
+draining M
+draining B
+draining P
+draining B
+draining C
+target is now ['C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'P', 'B', 'C']
+moving 2 from 4 to 5
+amount is 2, source is ['W', 'R', 'V', 'P', 'J']
+target was ['Z', 'T', 'L', 'Q', 'N', 'C', 'C']
+draining P
+draining J
+target is now ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J']
+moving 2 from 7 to 6
+amount is 2, source is ['R', 'F']
+target was ['G', 'D', 'Z', 'W']
+draining R
+draining F
+target is now ['G', 'D', 'Z', 'W', 'R', 'F']
+moving 2 from 6 to 7
+amount is 2, source is ['G', 'D', 'Z', 'W', 'R', 'F']
+target was []
+draining R
+draining F
+target is now ['R', 'F']
+moving 2 from 4 to 1
+amount is 2, source is ['W', 'R', 'V']
+target was ['C', 'N', 'J', 'H', 'L', 'F', 'M', 'T']
+draining R
+draining V
+target is now ['C', 'N', 'J', 'H', 'L', 'F', 'M', 'T', 'R', 'V']
+moving 3 from 9 to 5
+amount is 3, source is ['V', 'F', 'P']
+target was ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J']
+draining V
+draining F
+draining P
+target is now ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J', 'V', 'F', 'P']
+moving 1 from 1 to 4
+amount is 1, source is ['C', 'N', 'J', 'H', 'L', 'F', 'M', 'T', 'R', 'V']
+target was ['W']
+draining V
+target is now ['W', 'V']
+moving 3 from 2 to 5
+amount is 3, source is ['C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'P', 'B', 'C']
+target was ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J', 'V', 'F', 'P']
+draining P
+draining B
+draining C
+target is now ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J', 'V', 'F', 'P', 'P', 'B', 'C']
+moving 2 from 4 to 1
+amount is 2, source is ['W', 'V']
+target was ['C', 'N', 'J', 'H', 'L', 'F', 'M', 'T', 'R']
+draining W
+draining V
+target is now ['C', 'N', 'J', 'H', 'L', 'F', 'M', 'T', 'R', 'W', 'V']
+moving 2 from 3 to 2
+amount is 2, source is ['Z', 'W', 'S', 'S']
+target was ['C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B']
+draining S
+draining S
+target is now ['C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'S', 'S']
+moving 5 from 8 to 5
+amount is 5, source is ['W', 'N', 'F', 'S', 'D', 'R', 'T', 'H', 'M', 'H']
+target was ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J', 'V', 'F', 'P', 'P', 'B', 'C']
+draining R
+draining T
+draining H
+draining M
+draining H
+target is now ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J', 'V', 'F', 'P', 'P', 'B', 'C', 'R', 'T', 'H', 'M', 'H']
+moving 1 from 7 to 2
+amount is 1, source is ['R', 'F']
+target was ['C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'S', 'S']
+draining F
+target is now ['C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'S', 'S', 'F']
+moving 1 from 7 to 1
+amount is 1, source is ['R']
+target was ['C', 'N', 'J', 'H', 'L', 'F', 'M', 'T', 'R', 'W', 'V']
+draining R
+target is now ['C', 'N', 'J', 'H', 'L', 'F', 'M', 'T', 'R', 'W', 'V', 'R']
+moving 1 from 3 to 5
+amount is 1, source is ['Z', 'W']
+target was ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J', 'V', 'F', 'P', 'P', 'B', 'C', 'R', 'T', 'H', 'M', 'H']
+draining W
+target is now ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J', 'V', 'F', 'P', 'P', 'B', 'C', 'R', 'T', 'H', 'M', 'H', 'W']
+moving 1 from 8 to 7
+amount is 1, source is ['W', 'N', 'F', 'S', 'D']
+target was []
+draining D
+target is now ['D']
+moving 1 from 6 to 7
+amount is 1, source is ['G', 'D', 'Z', 'W']
+target was ['D']
+draining W
+target is now ['D', 'W']
+moving 1 from 3 to 5
+amount is 1, source is ['Z']
+target was ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J', 'V', 'F', 'P', 'P', 'B', 'C', 'R', 'T', 'H', 'M', 'H', 'W']
+draining Z
+target is now ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J', 'V', 'F', 'P', 'P', 'B', 'C', 'R', 'T', 'H', 'M', 'H', 'W', 'Z']
+moving 12 from 5 to 6
+amount is 12, source is ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J', 'V', 'F', 'P', 'P', 'B', 'C', 'R', 'T', 'H', 'M', 'H', 'W', 'Z']
+target was ['G', 'D', 'Z']
+draining F
+draining P
+draining P
+draining B
+draining C
+draining R
+draining T
+draining H
+draining M
+draining H
+draining W
+draining Z
+target is now ['G', 'D', 'Z', 'F', 'P', 'P', 'B', 'C', 'R', 'T', 'H', 'M', 'H', 'W', 'Z']
+moving 6 from 6 to 2
+amount is 6, source is ['G', 'D', 'Z', 'F', 'P', 'P', 'B', 'C', 'R', 'T', 'H', 'M', 'H', 'W', 'Z']
+target was ['C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'S', 'S', 'F']
+draining T
+draining H
+draining M
+draining H
+draining W
+draining Z
+target is now ['C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W', 'Z']
+moving 1 from 7 to 4
+amount is 1, source is ['D', 'W']
+target was []
+draining W
+target is now ['W']
+moving 1 from 5 to 7
+amount is 1, source is ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J', 'V']
+target was ['D']
+draining V
+target is now ['D', 'V']
+moving 2 from 8 to 9
+amount is 2, source is ['W', 'N', 'F', 'S']
+target was []
+draining F
+draining S
+target is now ['F', 'S']
+moving 1 from 9 to 6
+amount is 1, source is ['F', 'S']
+target was ['G', 'D', 'Z', 'F', 'P', 'P', 'B', 'C', 'R']
+draining S
+target is now ['G', 'D', 'Z', 'F', 'P', 'P', 'B', 'C', 'R', 'S']
+moving 1 from 8 to 9
+amount is 1, source is ['W', 'N']
+target was ['F']
+draining N
+target is now ['F', 'N']
+moving 5 from 6 to 9
+amount is 5, source is ['G', 'D', 'Z', 'F', 'P', 'P', 'B', 'C', 'R', 'S']
+target was ['F', 'N']
+draining P
+draining B
+draining C
+draining R
+draining S
+target is now ['F', 'N', 'P', 'B', 'C', 'R', 'S']
+moving 1 from 8 to 1
+amount is 1, source is ['W']
+target was ['C', 'N', 'J', 'H', 'L', 'F', 'M', 'T', 'R', 'W', 'V', 'R']
+draining W
+target is now ['C', 'N', 'J', 'H', 'L', 'F', 'M', 'T', 'R', 'W', 'V', 'R', 'W']
+moving 14 from 2 to 4
+amount is 14, source is ['C', 'L', 'G', 'J', 'L', 'V', 'B', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W', 'Z']
+target was ['W']
+draining V
+draining B
+draining L
+draining M
+draining B
+draining S
+draining S
+draining F
+draining T
+draining H
+draining M
+draining H
+draining W
+draining Z
+target is now ['W', 'V', 'B', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W', 'Z']
+moving 1 from 7 to 1
+amount is 1, source is ['D', 'V']
+target was ['C', 'N', 'J', 'H', 'L', 'F', 'M', 'T', 'R', 'W', 'V', 'R', 'W']
+draining V
+target is now ['C', 'N', 'J', 'H', 'L', 'F', 'M', 'T', 'R', 'W', 'V', 'R', 'W', 'V']
+moving 1 from 7 to 2
+amount is 1, source is ['D']
+target was ['C', 'L', 'G', 'J', 'L']
+draining D
+target is now ['C', 'L', 'G', 'J', 'L', 'D']
+moving 3 from 2 to 3
+amount is 3, source is ['C', 'L', 'G', 'J', 'L', 'D']
+target was []
+draining J
+draining L
+draining D
+target is now ['J', 'L', 'D']
+moving 2 from 3 to 4
+amount is 2, source is ['J', 'L', 'D']
+target was ['W', 'V', 'B', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W', 'Z']
+draining L
+draining D
+target is now ['W', 'V', 'B', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W', 'Z', 'L', 'D']
+moving 1 from 2 to 4
+amount is 1, source is ['C', 'L', 'G']
+target was ['W', 'V', 'B', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W', 'Z', 'L', 'D']
+draining G
+target is now ['W', 'V', 'B', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W', 'Z', 'L', 'D', 'G']
+moving 4 from 6 to 2
+amount is 4, source is ['G', 'D', 'Z', 'F', 'P']
+target was ['C', 'L']
+draining D
+draining Z
+draining F
+draining P
+target is now ['C', 'L', 'D', 'Z', 'F', 'P']
+moving 8 from 5 to 8
+amount is 8, source is ['Z', 'T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J']
+target was []
+draining T
+draining L
+draining Q
+draining N
+draining C
+draining C
+draining P
+draining J
+target is now ['T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J']
+moving 15 from 4 to 8
+amount is 15, source is ['W', 'V', 'B', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W', 'Z', 'L', 'D', 'G']
+target was ['T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J']
+draining L
+draining M
+draining B
+draining S
+draining S
+draining F
+draining T
+draining H
+draining M
+draining H
+draining W
+draining Z
+draining L
+draining D
+draining G
+target is now ['T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W', 'Z', 'L', 'D', 'G']
+moving 3 from 4 to 8
+amount is 3, source is ['W', 'V', 'B']
+target was ['T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W', 'Z', 'L', 'D', 'G']
+draining W
+draining V
+draining B
+target is now ['T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W', 'Z', 'L', 'D', 'G', 'W', 'V', 'B']
+moving 7 from 8 to 4
+amount is 7, source is ['T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W', 'Z', 'L', 'D', 'G', 'W', 'V', 'B']
+target was []
+draining Z
+draining L
+draining D
+draining G
+draining W
+draining V
+draining B
+target is now ['Z', 'L', 'D', 'G', 'W', 'V', 'B']
+moving 6 from 1 to 3
+amount is 6, source is ['C', 'N', 'J', 'H', 'L', 'F', 'M', 'T', 'R', 'W', 'V', 'R', 'W', 'V']
+target was ['J']
+draining R
+draining W
+draining V
+draining R
+draining W
+draining V
+target is now ['J', 'R', 'W', 'V', 'R', 'W', 'V']
+moving 1 from 6 to 1
+amount is 1, source is ['G']
+target was ['C', 'N', 'J', 'H', 'L', 'F', 'M', 'T']
+draining G
+target is now ['C', 'N', 'J', 'H', 'L', 'F', 'M', 'T', 'G']
+moving 5 from 4 to 8
+amount is 5, source is ['Z', 'L', 'D', 'G', 'W', 'V', 'B']
+target was ['T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W']
+draining D
+draining G
+draining W
+draining V
+draining B
+target is now ['T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W', 'D', 'G', 'W', 'V', 'B']
+moving 7 from 9 to 1
+amount is 7, source is ['F', 'N', 'P', 'B', 'C', 'R', 'S']
+target was ['C', 'N', 'J', 'H', 'L', 'F', 'M', 'T', 'G']
+draining F
+draining N
+draining P
+draining B
+draining C
+draining R
+draining S
+target is now ['C', 'N', 'J', 'H', 'L', 'F', 'M', 'T', 'G', 'F', 'N', 'P', 'B', 'C', 'R', 'S']
+moving 1 from 5 to 6
+amount is 1, source is ['Z']
+target was []
+draining Z
+target is now ['Z']
+moving 4 from 2 to 6
+amount is 4, source is ['C', 'L', 'D', 'Z', 'F', 'P']
+target was ['Z']
+draining D
+draining Z
+draining F
+draining P
+target is now ['Z', 'D', 'Z', 'F', 'P']
+moving 10 from 1 to 8
+amount is 10, source is ['C', 'N', 'J', 'H', 'L', 'F', 'M', 'T', 'G', 'F', 'N', 'P', 'B', 'C', 'R', 'S']
+target was ['T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W', 'D', 'G', 'W', 'V', 'B']
+draining M
+draining T
+draining G
+draining F
+draining N
+draining P
+draining B
+draining C
+draining R
+draining S
+target is now ['T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W', 'D', 'G', 'W', 'V', 'B', 'M', 'T', 'G', 'F', 'N', 'P', 'B', 'C', 'R', 'S']
+moving 29 from 8 to 3
+amount is 29, source is ['T', 'L', 'Q', 'N', 'C', 'C', 'P', 'J', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W', 'D', 'G', 'W', 'V', 'B', 'M', 'T', 'G', 'F', 'N', 'P', 'B', 'C', 'R', 'S']
+target was ['J', 'R', 'W', 'V', 'R', 'W', 'V']
+draining C
+draining P
+draining J
+draining L
+draining M
+draining B
+draining S
+draining S
+draining F
+draining T
+draining H
+draining M
+draining H
+draining W
+draining D
+draining G
+draining W
+draining V
+draining B
+draining M
+draining T
+draining G
+draining F
+draining N
+draining P
+draining B
+draining C
+draining R
+draining S
+target is now ['J', 'R', 'W', 'V', 'R', 'W', 'V', 'C', 'P', 'J', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W', 'D', 'G', 'W', 'V', 'B', 'M', 'T', 'G', 'F', 'N', 'P', 'B', 'C', 'R', 'S']
+moving 1 from 4 to 5
+amount is 1, source is ['Z', 'L']
+target was []
+draining L
+target is now ['L']
+moving 1 from 4 to 6
+amount is 1, source is ['Z']
+target was ['Z', 'D', 'Z', 'F', 'P']
+draining Z
+target is now ['Z', 'D', 'Z', 'F', 'P', 'Z']
+moving 6 from 1 to 4
+amount is 6, source is ['C', 'N', 'J', 'H', 'L', 'F']
+target was []
+draining C
+draining N
+draining J
+draining H
+draining L
+draining F
+target is now ['C', 'N', 'J', 'H', 'L', 'F']
+moving 1 from 5 to 8
+amount is 1, source is ['L']
+target was ['T', 'L', 'Q', 'N', 'C']
+draining L
+target is now ['T', 'L', 'Q', 'N', 'C', 'L']
+moving 3 from 4 to 2
+amount is 3, source is ['C', 'N', 'J', 'H', 'L', 'F']
+target was ['C', 'L']
+draining H
+draining L
+draining F
+target is now ['C', 'L', 'H', 'L', 'F']
+moving 27 from 3 to 7
+amount is 27, source is ['J', 'R', 'W', 'V', 'R', 'W', 'V', 'C', 'P', 'J', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W', 'D', 'G', 'W', 'V', 'B', 'M', 'T', 'G', 'F', 'N', 'P', 'B', 'C', 'R', 'S']
+target was []
+draining J
+draining L
+draining M
+draining B
+draining S
+draining S
+draining F
+draining T
+draining H
+draining M
+draining H
+draining W
+draining D
+draining G
+draining W
+draining V
+draining B
+draining M
+draining T
+draining G
+draining F
+draining N
+draining P
+draining B
+draining C
+draining R
+draining S
+target is now ['J', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W', 'D', 'G', 'W', 'V', 'B', 'M', 'T', 'G', 'F', 'N', 'P', 'B', 'C', 'R', 'S']
+moving 18 from 7 to 9
+amount is 18, source is ['J', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H', 'M', 'H', 'W', 'D', 'G', 'W', 'V', 'B', 'M', 'T', 'G', 'F', 'N', 'P', 'B', 'C', 'R', 'S']
+target was []
+draining M
+draining H
+draining W
+draining D
+draining G
+draining W
+draining V
+draining B
+draining M
+draining T
+draining G
+draining F
+draining N
+draining P
+draining B
+draining C
+draining R
+draining S
+target is now ['M', 'H', 'W', 'D', 'G', 'W', 'V', 'B', 'M', 'T', 'G', 'F', 'N', 'P', 'B', 'C', 'R', 'S']
+moving 5 from 6 to 3
+amount is 5, source is ['Z', 'D', 'Z', 'F', 'P', 'Z']
+target was ['J', 'R', 'W', 'V', 'R', 'W', 'V', 'C', 'P']
+draining D
+draining Z
+draining F
+draining P
+draining Z
+target is now ['J', 'R', 'W', 'V', 'R', 'W', 'V', 'C', 'P', 'D', 'Z', 'F', 'P', 'Z']
+moving 7 from 7 to 4
+amount is 7, source is ['J', 'L', 'M', 'B', 'S', 'S', 'F', 'T', 'H']
+target was ['C', 'N', 'J']
+draining M
+draining B
+draining S
+draining S
+draining F
+draining T
+draining H
+target is now ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'F', 'T', 'H']
+moving 1 from 7 to 8
+amount is 1, source is ['J', 'L']
+target was ['T', 'L', 'Q', 'N', 'C', 'L']
+draining L
+target is now ['T', 'L', 'Q', 'N', 'C', 'L', 'L']
+moving 9 from 3 to 5
+amount is 9, source is ['J', 'R', 'W', 'V', 'R', 'W', 'V', 'C', 'P', 'D', 'Z', 'F', 'P', 'Z']
+target was []
+draining W
+draining V
+draining C
+draining P
+draining D
+draining Z
+draining F
+draining P
+draining Z
+target is now ['W', 'V', 'C', 'P', 'D', 'Z', 'F', 'P', 'Z']
+moving 5 from 3 to 6
+amount is 5, source is ['J', 'R', 'W', 'V', 'R']
+target was ['Z']
+draining J
+draining R
+draining W
+draining V
+draining R
+target is now ['Z', 'J', 'R', 'W', 'V', 'R']
+moving 3 from 4 to 2
+amount is 3, source is ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'F', 'T', 'H']
+target was ['C', 'L', 'H', 'L', 'F']
+draining F
+draining T
+draining H
+target is now ['C', 'L', 'H', 'L', 'F', 'F', 'T', 'H']
+moving 1 from 7 to 2
+amount is 1, source is ['J']
+target was ['C', 'L', 'H', 'L', 'F', 'F', 'T', 'H']
+draining J
+target is now ['C', 'L', 'H', 'L', 'F', 'F', 'T', 'H', 'J']
+moving 2 from 8 to 4
+amount is 2, source is ['T', 'L', 'Q', 'N', 'C', 'L', 'L']
+target was ['C', 'N', 'J', 'M', 'B', 'S', 'S']
+draining L
+draining L
+target is now ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L']
+moving 2 from 8 to 6
+amount is 2, source is ['T', 'L', 'Q', 'N', 'C']
+target was ['Z', 'J', 'R', 'W', 'V', 'R']
+draining N
+draining C
+target is now ['Z', 'J', 'R', 'W', 'V', 'R', 'N', 'C']
+moving 2 from 8 to 6
+amount is 2, source is ['T', 'L', 'Q']
+target was ['Z', 'J', 'R', 'W', 'V', 'R', 'N', 'C']
+draining L
+draining Q
+target is now ['Z', 'J', 'R', 'W', 'V', 'R', 'N', 'C', 'L', 'Q']
+moving 8 from 2 to 1
+amount is 8, source is ['C', 'L', 'H', 'L', 'F', 'F', 'T', 'H', 'J']
+target was []
+draining L
+draining H
+draining L
+draining F
+draining F
+draining T
+draining H
+draining J
+target is now ['L', 'H', 'L', 'F', 'F', 'T', 'H', 'J']
+moving 7 from 5 to 4
+amount is 7, source is ['W', 'V', 'C', 'P', 'D', 'Z', 'F', 'P', 'Z']
+target was ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L']
+draining C
+draining P
+draining D
+draining Z
+draining F
+draining P
+draining Z
+target is now ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'Z']
+moving 1 from 8 to 9
+amount is 1, source is ['T']
+target was ['M', 'H', 'W', 'D', 'G', 'W', 'V', 'B', 'M', 'T', 'G', 'F', 'N', 'P', 'B', 'C', 'R', 'S']
+draining T
+target is now ['M', 'H', 'W', 'D', 'G', 'W', 'V', 'B', 'M', 'T', 'G', 'F', 'N', 'P', 'B', 'C', 'R', 'S', 'T']
+moving 4 from 1 to 5
+amount is 4, source is ['L', 'H', 'L', 'F', 'F', 'T', 'H', 'J']
+target was ['W', 'V']
+draining F
+draining T
+draining H
+draining J
+target is now ['W', 'V', 'F', 'T', 'H', 'J']
+moving 1 from 2 to 9
+amount is 1, source is ['C']
+target was ['M', 'H', 'W', 'D', 'G', 'W', 'V', 'B', 'M', 'T', 'G', 'F', 'N', 'P', 'B', 'C', 'R', 'S', 'T']
+draining C
+target is now ['M', 'H', 'W', 'D', 'G', 'W', 'V', 'B', 'M', 'T', 'G', 'F', 'N', 'P', 'B', 'C', 'R', 'S', 'T', 'C']
+moving 8 from 6 to 3
+amount is 8, source is ['Z', 'J', 'R', 'W', 'V', 'R', 'N', 'C', 'L', 'Q']
+target was []
+draining R
+draining W
+draining V
+draining R
+draining N
+draining C
+draining L
+draining Q
+target is now ['R', 'W', 'V', 'R', 'N', 'C', 'L', 'Q']
+moving 3 from 1 to 8
+amount is 3, source is ['L', 'H', 'L', 'F']
+target was []
+draining H
+draining L
+draining F
+target is now ['H', 'L', 'F']
+moving 1 from 1 to 7
+amount is 1, source is ['L']
+target was []
+draining L
+target is now ['L']
+moving 8 from 3 to 6
+amount is 8, source is ['R', 'W', 'V', 'R', 'N', 'C', 'L', 'Q']
+target was ['Z', 'J']
+draining R
+draining W
+draining V
+draining R
+draining N
+draining C
+draining L
+draining Q
+target is now ['Z', 'J', 'R', 'W', 'V', 'R', 'N', 'C', 'L', 'Q']
+moving 2 from 8 to 3
+amount is 2, source is ['H', 'L', 'F']
+target was []
+draining L
+draining F
+target is now ['L', 'F']
+moving 1 from 3 to 6
+amount is 1, source is ['L', 'F']
+target was ['Z', 'J', 'R', 'W', 'V', 'R', 'N', 'C', 'L', 'Q']
+draining F
+target is now ['Z', 'J', 'R', 'W', 'V', 'R', 'N', 'C', 'L', 'Q', 'F']
+moving 4 from 6 to 7
+amount is 4, source is ['Z', 'J', 'R', 'W', 'V', 'R', 'N', 'C', 'L', 'Q', 'F']
+target was ['L']
+draining C
+draining L
+draining Q
+draining F
+target is now ['L', 'C', 'L', 'Q', 'F']
+moving 16 from 4 to 2
+amount is 16, source is ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'Z']
+target was []
+draining C
+draining N
+draining J
+draining M
+draining B
+draining S
+draining S
+draining L
+draining L
+draining C
+draining P
+draining D
+draining Z
+draining F
+draining P
+draining Z
+target is now ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'Z']
+moving 1 from 3 to 5
+amount is 1, source is ['L']
+target was ['W', 'V', 'F', 'T', 'H', 'J']
+draining L
+target is now ['W', 'V', 'F', 'T', 'H', 'J', 'L']
+moving 2 from 6 to 4
+amount is 2, source is ['Z', 'J', 'R', 'W', 'V', 'R', 'N']
+target was []
+draining R
+draining N
+target is now ['R', 'N']
+moving 1 from 2 to 3
+amount is 1, source is ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'Z']
+target was []
+draining Z
+target is now ['Z']
+moving 2 from 7 to 3
+amount is 2, source is ['L', 'C', 'L', 'Q', 'F']
+target was ['Z']
+draining Q
+draining F
+target is now ['Z', 'Q', 'F']
+moving 2 from 7 to 8
+amount is 2, source is ['L', 'C', 'L']
+target was ['H']
+draining C
+draining L
+target is now ['H', 'C', 'L']
+moving 3 from 6 to 7
+amount is 3, source is ['Z', 'J', 'R', 'W', 'V']
+target was ['L']
+draining R
+draining W
+draining V
+target is now ['L', 'R', 'W', 'V']
+moving 4 from 5 to 2
+amount is 4, source is ['W', 'V', 'F', 'T', 'H', 'J', 'L']
+target was ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P']
+draining T
+draining H
+draining J
+draining L
+target is now ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'J', 'L']
+moving 2 from 4 to 2
+amount is 2, source is ['R', 'N']
+target was ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'J', 'L']
+draining R
+draining N
+target is now ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'J', 'L', 'R', 'N']
+moving 4 from 9 to 8
+amount is 4, source is ['M', 'H', 'W', 'D', 'G', 'W', 'V', 'B', 'M', 'T', 'G', 'F', 'N', 'P', 'B', 'C', 'R', 'S', 'T', 'C']
+target was ['H', 'C', 'L']
+draining R
+draining S
+draining T
+draining C
+target is now ['H', 'C', 'L', 'R', 'S', 'T', 'C']
+moving 3 from 5 to 1
+amount is 3, source is ['W', 'V', 'F']
+target was []
+draining W
+draining V
+draining F
+target is now ['W', 'V', 'F']
+moving 3 from 1 to 6
+amount is 3, source is ['W', 'V', 'F']
+target was ['Z', 'J']
+draining W
+draining V
+draining F
+target is now ['Z', 'J', 'W', 'V', 'F']
+moving 6 from 9 to 1
+amount is 6, source is ['M', 'H', 'W', 'D', 'G', 'W', 'V', 'B', 'M', 'T', 'G', 'F', 'N', 'P', 'B', 'C']
+target was []
+draining G
+draining F
+draining N
+draining P
+draining B
+draining C
+target is now ['G', 'F', 'N', 'P', 'B', 'C']
+moving 4 from 7 to 9
+amount is 4, source is ['L', 'R', 'W', 'V']
+target was ['M', 'H', 'W', 'D', 'G', 'W', 'V', 'B', 'M', 'T']
+draining L
+draining R
+draining W
+draining V
+target is now ['M', 'H', 'W', 'D', 'G', 'W', 'V', 'B', 'M', 'T', 'L', 'R', 'W', 'V']
+moving 8 from 9 to 5
+amount is 8, source is ['M', 'H', 'W', 'D', 'G', 'W', 'V', 'B', 'M', 'T', 'L', 'R', 'W', 'V']
+target was []
+draining V
+draining B
+draining M
+draining T
+draining L
+draining R
+draining W
+draining V
+target is now ['V', 'B', 'M', 'T', 'L', 'R', 'W', 'V']
+moving 4 from 5 to 2
+amount is 4, source is ['V', 'B', 'M', 'T', 'L', 'R', 'W', 'V']
+target was ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'J', 'L', 'R', 'N']
+draining L
+draining R
+draining W
+draining V
+target is now ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'J', 'L', 'R', 'N', 'L', 'R', 'W', 'V']
+moving 7 from 8 to 6
+amount is 7, source is ['H', 'C', 'L', 'R', 'S', 'T', 'C']
+target was ['Z', 'J', 'W', 'V', 'F']
+draining H
+draining C
+draining L
+draining R
+draining S
+draining T
+draining C
+target is now ['Z', 'J', 'W', 'V', 'F', 'H', 'C', 'L', 'R', 'S', 'T', 'C']
+moving 11 from 6 to 8
+amount is 11, source is ['Z', 'J', 'W', 'V', 'F', 'H', 'C', 'L', 'R', 'S', 'T', 'C']
+target was []
+draining J
+draining W
+draining V
+draining F
+draining H
+draining C
+draining L
+draining R
+draining S
+draining T
+draining C
+target is now ['J', 'W', 'V', 'F', 'H', 'C', 'L', 'R', 'S', 'T', 'C']
+moving 4 from 1 to 2
+amount is 4, source is ['G', 'F', 'N', 'P', 'B', 'C']
+target was ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'J', 'L', 'R', 'N', 'L', 'R', 'W', 'V']
+draining N
+draining P
+draining B
+draining C
+target is now ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'J', 'L', 'R', 'N', 'L', 'R', 'W', 'V', 'N', 'P', 'B', 'C']
+moving 3 from 8 to 9
+amount is 3, source is ['J', 'W', 'V', 'F', 'H', 'C', 'L', 'R', 'S', 'T', 'C']
+target was ['M', 'H', 'W', 'D', 'G', 'W']
+draining S
+draining T
+draining C
+target is now ['M', 'H', 'W', 'D', 'G', 'W', 'S', 'T', 'C']
+moving 5 from 8 to 7
+amount is 5, source is ['J', 'W', 'V', 'F', 'H', 'C', 'L', 'R']
+target was []
+draining F
+draining H
+draining C
+draining L
+draining R
+target is now ['F', 'H', 'C', 'L', 'R']
+moving 2 from 1 to 6
+amount is 2, source is ['G', 'F']
+target was ['Z']
+draining G
+draining F
+target is now ['Z', 'G', 'F']
+moving 4 from 5 to 6
+amount is 4, source is ['V', 'B', 'M', 'T']
+target was ['Z', 'G', 'F']
+draining V
+draining B
+draining M
+draining T
+target is now ['Z', 'G', 'F', 'V', 'B', 'M', 'T']
+moving 2 from 7 to 9
+amount is 2, source is ['F', 'H', 'C', 'L', 'R']
+target was ['M', 'H', 'W', 'D', 'G', 'W', 'S', 'T', 'C']
+draining L
+draining R
+target is now ['M', 'H', 'W', 'D', 'G', 'W', 'S', 'T', 'C', 'L', 'R']
+moving 2 from 7 to 3
+amount is 2, source is ['F', 'H', 'C']
+target was ['Z', 'Q', 'F']
+draining H
+draining C
+target is now ['Z', 'Q', 'F', 'H', 'C']
+moving 5 from 6 to 2
+amount is 5, source is ['Z', 'G', 'F', 'V', 'B', 'M', 'T']
+target was ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'J', 'L', 'R', 'N', 'L', 'R', 'W', 'V', 'N', 'P', 'B', 'C']
+draining F
+draining V
+draining B
+draining M
+draining T
+target is now ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'J', 'L', 'R', 'N', 'L', 'R', 'W', 'V', 'N', 'P', 'B', 'C', 'F', 'V', 'B', 'M', 'T']
+moving 4 from 3 to 1
+amount is 4, source is ['Z', 'Q', 'F', 'H', 'C']
+target was []
+draining Q
+draining F
+draining H
+draining C
+target is now ['Q', 'F', 'H', 'C']
+moving 1 from 7 to 2
+amount is 1, source is ['F']
+target was ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'J', 'L', 'R', 'N', 'L', 'R', 'W', 'V', 'N', 'P', 'B', 'C', 'F', 'V', 'B', 'M', 'T']
+draining F
+target is now ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'J', 'L', 'R', 'N', 'L', 'R', 'W', 'V', 'N', 'P', 'B', 'C', 'F', 'V', 'B', 'M', 'T', 'F']
+moving 1 from 3 to 2
+amount is 1, source is ['Z']
+target was ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'J', 'L', 'R', 'N', 'L', 'R', 'W', 'V', 'N', 'P', 'B', 'C', 'F', 'V', 'B', 'M', 'T', 'F']
+draining Z
+target is now ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'J', 'L', 'R', 'N', 'L', 'R', 'W', 'V', 'N', 'P', 'B', 'C', 'F', 'V', 'B', 'M', 'T', 'F', 'Z']
+moving 2 from 6 to 7
+amount is 2, source is ['Z', 'G']
+target was []
+draining Z
+draining G
+target is now ['Z', 'G']
+moving 1 from 1 to 6
+amount is 1, source is ['Q', 'F', 'H', 'C']
+target was []
+draining C
+target is now ['C']
+moving 6 from 9 to 6
+amount is 6, source is ['M', 'H', 'W', 'D', 'G', 'W', 'S', 'T', 'C', 'L', 'R']
+target was ['C']
+draining W
+draining S
+draining T
+draining C
+draining L
+draining R
+target is now ['C', 'W', 'S', 'T', 'C', 'L', 'R']
+moving 1 from 7 to 6
+amount is 1, source is ['Z', 'G']
+target was ['C', 'W', 'S', 'T', 'C', 'L', 'R']
+draining G
+target is now ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G']
+moving 1 from 7 to 6
+amount is 1, source is ['Z']
+target was ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G']
+draining Z
+target is now ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z']
+moving 2 from 1 to 7
+amount is 2, source is ['Q', 'F', 'H']
+target was []
+draining F
+draining H
+target is now ['F', 'H']
+moving 2 from 8 to 6
+amount is 2, source is ['J', 'W', 'V']
+target was ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z']
+draining W
+draining V
+target is now ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V']
+moving 4 from 9 to 2
+amount is 4, source is ['M', 'H', 'W', 'D', 'G']
+target was ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'J', 'L', 'R', 'N', 'L', 'R', 'W', 'V', 'N', 'P', 'B', 'C', 'F', 'V', 'B', 'M', 'T', 'F', 'Z']
+draining H
+draining W
+draining D
+draining G
+target is now ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'J', 'L', 'R', 'N', 'L', 'R', 'W', 'V', 'N', 'P', 'B', 'C', 'F', 'V', 'B', 'M', 'T', 'F', 'Z', 'H', 'W', 'D', 'G']
+moving 17 from 2 to 6
+amount is 17, source is ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'J', 'L', 'R', 'N', 'L', 'R', 'W', 'V', 'N', 'P', 'B', 'C', 'F', 'V', 'B', 'M', 'T', 'F', 'Z', 'H', 'W', 'D', 'G']
+target was ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V']
+draining W
+draining V
+draining N
+draining P
+draining B
+draining C
+draining F
+draining V
+draining B
+draining M
+draining T
+draining F
+draining Z
+draining H
+draining W
+draining D
+draining G
+target is now ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'C', 'F', 'V', 'B', 'M', 'T', 'F', 'Z', 'H', 'W', 'D', 'G']
+moving 1 from 9 to 4
+amount is 1, source is ['M']
+target was []
+draining M
+target is now ['M']
+moving 1 from 1 to 3
+amount is 1, source is ['Q']
+target was []
+draining Q
+target is now ['Q']
+moving 1 from 4 to 1
+amount is 1, source is ['M']
+target was []
+draining M
+target is now ['M']
+moving 20 from 2 to 8
+amount is 20, source is ['C', 'N', 'J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'J', 'L', 'R', 'N', 'L', 'R']
+target was ['J']
+draining M
+draining B
+draining S
+draining S
+draining L
+draining L
+draining C
+draining P
+draining D
+draining Z
+draining F
+draining P
+draining T
+draining H
+draining J
+draining L
+draining R
+draining N
+draining L
+draining R
+target is now ['J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'J', 'L', 'R', 'N', 'L', 'R']
+moving 2 from 7 to 6
+amount is 2, source is ['F', 'H']
+target was ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'C', 'F', 'V', 'B', 'M', 'T', 'F', 'Z', 'H', 'W', 'D', 'G']
+draining F
+draining H
+target is now ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'C', 'F', 'V', 'B', 'M', 'T', 'F', 'Z', 'H', 'W', 'D', 'G', 'F', 'H']
+moving 2 from 2 to 5
+amount is 2, source is ['C', 'N', 'J']
+target was []
+draining N
+draining J
+target is now ['N', 'J']
+moving 1 from 3 to 1
+amount is 1, source is ['Q']
+target was ['M']
+draining Q
+target is now ['M', 'Q']
+moving 1 from 2 to 5
+amount is 1, source is ['C']
+target was ['N', 'J']
+draining C
+target is now ['N', 'J', 'C']
+moving 6 from 8 to 6
+amount is 6, source is ['J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'J', 'L', 'R', 'N', 'L', 'R']
+target was ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'C', 'F', 'V', 'B', 'M', 'T', 'F', 'Z', 'H', 'W', 'D', 'G', 'F', 'H']
+draining J
+draining L
+draining R
+draining N
+draining L
+draining R
+target is now ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'C', 'F', 'V', 'B', 'M', 'T', 'F', 'Z', 'H', 'W', 'D', 'G', 'F', 'H', 'J', 'L', 'R', 'N', 'L', 'R']
+moving 2 from 5 to 6
+amount is 2, source is ['N', 'J', 'C']
+target was ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'C', 'F', 'V', 'B', 'M', 'T', 'F', 'Z', 'H', 'W', 'D', 'G', 'F', 'H', 'J', 'L', 'R', 'N', 'L', 'R']
+draining J
+draining C
+target is now ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'C', 'F', 'V', 'B', 'M', 'T', 'F', 'Z', 'H', 'W', 'D', 'G', 'F', 'H', 'J', 'L', 'R', 'N', 'L', 'R', 'J', 'C']
+moving 3 from 6 to 4
+amount is 3, source is ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'C', 'F', 'V', 'B', 'M', 'T', 'F', 'Z', 'H', 'W', 'D', 'G', 'F', 'H', 'J', 'L', 'R', 'N', 'L', 'R', 'J', 'C']
+target was []
+draining R
+draining J
+draining C
+target is now ['R', 'J', 'C']
+moving 1 from 1 to 4
+amount is 1, source is ['M', 'Q']
+target was ['R', 'J', 'C']
+draining Q
+target is now ['R', 'J', 'C', 'Q']
+moving 15 from 8 to 2
+amount is 15, source is ['J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H']
+target was []
+draining J
+draining M
+draining B
+draining S
+draining S
+draining L
+draining L
+draining C
+draining P
+draining D
+draining Z
+draining F
+draining P
+draining T
+draining H
+target is now ['J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H']
+moving 11 from 2 to 9
+amount is 11, source is ['J', 'M', 'B', 'S', 'S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H']
+target was []
+draining S
+draining L
+draining L
+draining C
+draining P
+draining D
+draining Z
+draining F
+draining P
+draining T
+draining H
+target is now ['S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H']
+moving 1 from 1 to 3
+amount is 1, source is ['M']
+target was []
+draining M
+target is now ['M']
+moving 10 from 9 to 4
+amount is 10, source is ['S', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H']
+target was ['R', 'J', 'C', 'Q']
+draining L
+draining L
+draining C
+draining P
+draining D
+draining Z
+draining F
+draining P
+draining T
+draining H
+target is now ['R', 'J', 'C', 'Q', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H']
+moving 1 from 9 to 8
+amount is 1, source is ['S']
+target was []
+draining S
+target is now ['S']
+moving 12 from 6 to 3
+amount is 12, source is ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'C', 'F', 'V', 'B', 'M', 'T', 'F', 'Z', 'H', 'W', 'D', 'G', 'F', 'H', 'J', 'L', 'R', 'N', 'L']
+target was ['M']
+draining Z
+draining H
+draining W
+draining D
+draining G
+draining F
+draining H
+draining J
+draining L
+draining R
+draining N
+draining L
+target is now ['M', 'Z', 'H', 'W', 'D', 'G', 'F', 'H', 'J', 'L', 'R', 'N', 'L']
+moving 1 from 8 to 7
+amount is 1, source is ['S']
+target was []
+draining S
+target is now ['S']
+moving 1 from 5 to 4
+amount is 1, source is ['N']
+target was ['R', 'J', 'C', 'Q', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H']
+draining N
+target is now ['R', 'J', 'C', 'Q', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'N']
+moving 8 from 4 to 7
+amount is 8, source is ['R', 'J', 'C', 'Q', 'L', 'L', 'C', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'N']
+target was ['S']
+draining P
+draining D
+draining Z
+draining F
+draining P
+draining T
+draining H
+draining N
+target is now ['S', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'N']
+moving 5 from 3 to 4
+amount is 5, source is ['M', 'Z', 'H', 'W', 'D', 'G', 'F', 'H', 'J', 'L', 'R', 'N', 'L']
+target was ['R', 'J', 'C', 'Q', 'L', 'L', 'C']
+draining J
+draining L
+draining R
+draining N
+draining L
+target is now ['R', 'J', 'C', 'Q', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L']
+moving 7 from 6 to 4
+amount is 7, source is ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'C', 'F', 'V', 'B', 'M', 'T', 'F']
+target was ['R', 'J', 'C', 'Q', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L']
+draining C
+draining F
+draining V
+draining B
+draining M
+draining T
+draining F
+target is now ['R', 'J', 'C', 'Q', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'T', 'F']
+moving 3 from 3 to 6
+amount is 3, source is ['M', 'Z', 'H', 'W', 'D', 'G', 'F', 'H']
+target was ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B']
+draining G
+draining F
+draining H
+target is now ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'G', 'F', 'H']
+moving 3 from 3 to 2
+amount is 3, source is ['M', 'Z', 'H', 'W', 'D']
+target was ['J', 'M', 'B', 'S']
+draining H
+draining W
+draining D
+target is now ['J', 'M', 'B', 'S', 'H', 'W', 'D']
+moving 1 from 3 to 6
+amount is 1, source is ['M', 'Z']
+target was ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'G', 'F', 'H']
+draining Z
+target is now ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'G', 'F', 'H', 'Z']
+moving 17 from 4 to 3
+amount is 17, source is ['R', 'J', 'C', 'Q', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'T', 'F']
+target was ['M']
+draining C
+draining Q
+draining L
+draining L
+draining C
+draining J
+draining L
+draining R
+draining N
+draining L
+draining C
+draining F
+draining V
+draining B
+draining M
+draining T
+draining F
+target is now ['M', 'C', 'Q', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'T', 'F']
+moving 1 from 3 to 4
+amount is 1, source is ['M', 'C', 'Q', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'T', 'F']
+target was ['R', 'J']
+draining F
+target is now ['R', 'J', 'F']
+moving 2 from 4 to 9
+amount is 2, source is ['R', 'J', 'F']
+target was []
+draining J
+draining F
+target is now ['J', 'F']
+moving 14 from 3 to 6
+amount is 14, source is ['M', 'C', 'Q', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'T']
+target was ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'G', 'F', 'H', 'Z']
+draining L
+draining L
+draining C
+draining J
+draining L
+draining R
+draining N
+draining L
+draining C
+draining F
+draining V
+draining B
+draining M
+draining T
+target is now ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'T']
+moving 2 from 2 to 7
+amount is 2, source is ['J', 'M', 'B', 'S', 'H', 'W', 'D']
+target was ['S', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'N']
+draining W
+draining D
+target is now ['S', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'N', 'W', 'D']
+moving 1 from 4 to 9
+amount is 1, source is ['R']
+target was ['J', 'F']
+draining R
+target is now ['J', 'F', 'R']
+moving 8 from 7 to 6
+amount is 8, source is ['S', 'P', 'D', 'Z', 'F', 'P', 'T', 'H', 'N', 'W', 'D']
+target was ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'T']
+draining Z
+draining F
+draining P
+draining T
+draining H
+draining N
+draining W
+draining D
+target is now ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'T', 'Z', 'F', 'P', 'T', 'H', 'N', 'W', 'D']
+moving 1 from 3 to 4
+amount is 1, source is ['M', 'C', 'Q']
+target was []
+draining Q
+target is now ['Q']
+moving 9 from 6 to 2
+amount is 9, source is ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'T', 'Z', 'F', 'P', 'T', 'H', 'N', 'W', 'D']
+target was ['J', 'M', 'B', 'S', 'H']
+draining T
+draining Z
+draining F
+draining P
+draining T
+draining H
+draining N
+draining W
+draining D
+target is now ['J', 'M', 'B', 'S', 'H', 'T', 'Z', 'F', 'P', 'T', 'H', 'N', 'W', 'D']
+moving 1 from 4 to 2
+amount is 1, source is ['Q']
+target was ['J', 'M', 'B', 'S', 'H', 'T', 'Z', 'F', 'P', 'T', 'H', 'N', 'W', 'D']
+draining Q
+target is now ['J', 'M', 'B', 'S', 'H', 'T', 'Z', 'F', 'P', 'T', 'H', 'N', 'W', 'D', 'Q']
+moving 26 from 6 to 2
+amount is 26, source is ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M']
+target was ['J', 'M', 'B', 'S', 'H', 'T', 'Z', 'F', 'P', 'T', 'H', 'N', 'W', 'D', 'Q']
+draining G
+draining Z
+draining W
+draining V
+draining W
+draining V
+draining N
+draining P
+draining B
+draining G
+draining F
+draining H
+draining Z
+draining L
+draining L
+draining C
+draining J
+draining L
+draining R
+draining N
+draining L
+draining C
+draining F
+draining V
+draining B
+draining M
+target is now ['J', 'M', 'B', 'S', 'H', 'T', 'Z', 'F', 'P', 'T', 'H', 'N', 'W', 'D', 'Q', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M']
+moving 27 from 2 to 6
+amount is 27, source is ['J', 'M', 'B', 'S', 'H', 'T', 'Z', 'F', 'P', 'T', 'H', 'N', 'W', 'D', 'Q', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M']
+target was ['C', 'W', 'S', 'T', 'C', 'L', 'R']
+draining Q
+draining G
+draining Z
+draining W
+draining V
+draining W
+draining V
+draining N
+draining P
+draining B
+draining G
+draining F
+draining H
+draining Z
+draining L
+draining L
+draining C
+draining J
+draining L
+draining R
+draining N
+draining L
+draining C
+draining F
+draining V
+draining B
+draining M
+target is now ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'Q', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M']
+moving 10 from 2 to 4
+amount is 10, source is ['J', 'M', 'B', 'S', 'H', 'T', 'Z', 'F', 'P', 'T', 'H', 'N', 'W', 'D']
+target was []
+draining H
+draining T
+draining Z
+draining F
+draining P
+draining T
+draining H
+draining N
+draining W
+draining D
+target is now ['H', 'T', 'Z', 'F', 'P', 'T', 'H', 'N', 'W', 'D']
+moving 1 from 7 to 6
+amount is 1, source is ['S', 'P', 'D']
+target was ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'Q', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M']
+draining D
+target is now ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'Q', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'D']
+moving 28 from 6 to 2
+amount is 28, source is ['C', 'W', 'S', 'T', 'C', 'L', 'R', 'Q', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'D']
+target was ['J', 'M', 'B', 'S']
+draining Q
+draining G
+draining Z
+draining W
+draining V
+draining W
+draining V
+draining N
+draining P
+draining B
+draining G
+draining F
+draining H
+draining Z
+draining L
+draining L
+draining C
+draining J
+draining L
+draining R
+draining N
+draining L
+draining C
+draining F
+draining V
+draining B
+draining M
+draining D
+target is now ['J', 'M', 'B', 'S', 'Q', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'D']
+moving 21 from 2 to 4
+amount is 21, source is ['J', 'M', 'B', 'S', 'Q', 'G', 'Z', 'W', 'V', 'W', 'V', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'D']
+target was ['H', 'T', 'Z', 'F', 'P', 'T', 'H', 'N', 'W', 'D']
+draining N
+draining P
+draining B
+draining G
+draining F
+draining H
+draining Z
+draining L
+draining L
+draining C
+draining J
+draining L
+draining R
+draining N
+draining L
+draining C
+draining F
+draining V
+draining B
+draining M
+draining D
+target is now ['H', 'T', 'Z', 'F', 'P', 'T', 'H', 'N', 'W', 'D', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'D']
+moving 2 from 6 to 7
+amount is 2, source is ['C', 'W', 'S', 'T', 'C', 'L', 'R']
+target was ['S', 'P']
+draining L
+draining R
+target is now ['S', 'P', 'L', 'R']
+moving 3 from 2 to 1
+amount is 3, source is ['J', 'M', 'B', 'S', 'Q', 'G', 'Z', 'W', 'V', 'W', 'V']
+target was []
+draining V
+draining W
+draining V
+target is now ['V', 'W', 'V']
+moving 5 from 6 to 5
+amount is 5, source is ['C', 'W', 'S', 'T', 'C']
+target was []
+draining C
+draining W
+draining S
+draining T
+draining C
+target is now ['C', 'W', 'S', 'T', 'C']
+moving 3 from 5 to 2
+amount is 3, source is ['C', 'W', 'S', 'T', 'C']
+target was ['J', 'M', 'B', 'S', 'Q', 'G', 'Z', 'W']
+draining S
+draining T
+draining C
+target is now ['J', 'M', 'B', 'S', 'Q', 'G', 'Z', 'W', 'S', 'T', 'C']
+moving 1 from 7 to 4
+amount is 1, source is ['S', 'P', 'L', 'R']
+target was ['H', 'T', 'Z', 'F', 'P', 'T', 'H', 'N', 'W', 'D', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'D']
+draining R
+target is now ['H', 'T', 'Z', 'F', 'P', 'T', 'H', 'N', 'W', 'D', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'D', 'R']
+moving 11 from 2 to 4
+amount is 11, source is ['J', 'M', 'B', 'S', 'Q', 'G', 'Z', 'W', 'S', 'T', 'C']
+target was ['H', 'T', 'Z', 'F', 'P', 'T', 'H', 'N', 'W', 'D', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'D', 'R']
+draining J
+draining M
+draining B
+draining S
+draining Q
+draining G
+draining Z
+draining W
+draining S
+draining T
+draining C
+target is now ['H', 'T', 'Z', 'F', 'P', 'T', 'H', 'N', 'W', 'D', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'D', 'R', 'J', 'M', 'B', 'S', 'Q', 'G', 'Z', 'W', 'S', 'T', 'C']
+moving 21 from 4 to 9
+amount is 21, source is ['H', 'T', 'Z', 'F', 'P', 'T', 'H', 'N', 'W', 'D', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'D', 'R', 'J', 'M', 'B', 'S', 'Q', 'G', 'Z', 'W', 'S', 'T', 'C']
+target was ['J', 'F', 'R']
+draining R
+draining N
+draining L
+draining C
+draining F
+draining V
+draining B
+draining M
+draining D
+draining R
+draining J
+draining M
+draining B
+draining S
+draining Q
+draining G
+draining Z
+draining W
+draining S
+draining T
+draining C
+target is now ['J', 'F', 'R', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'D', 'R', 'J', 'M', 'B', 'S', 'Q', 'G', 'Z', 'W', 'S', 'T', 'C']
+moving 1 from 5 to 8
+amount is 1, source is ['C', 'W']
+target was []
+draining W
+target is now ['W']
+moving 1 from 8 to 6
+amount is 1, source is ['W']
+target was []
+draining W
+target is now ['W']
+moving 18 from 9 to 7
+amount is 18, source is ['J', 'F', 'R', 'R', 'N', 'L', 'C', 'F', 'V', 'B', 'M', 'D', 'R', 'J', 'M', 'B', 'S', 'Q', 'G', 'Z', 'W', 'S', 'T', 'C']
+target was ['S', 'P', 'L']
+draining C
+draining F
+draining V
+draining B
+draining M
+draining D
+draining R
+draining J
+draining M
+draining B
+draining S
+draining Q
+draining G
+draining Z
+draining W
+draining S
+draining T
+draining C
+target is now ['S', 'P', 'L', 'C', 'F', 'V', 'B', 'M', 'D', 'R', 'J', 'M', 'B', 'S', 'Q', 'G', 'Z', 'W', 'S', 'T', 'C']
+moving 1 from 5 to 7
+amount is 1, source is ['C']
+target was ['S', 'P', 'L', 'C', 'F', 'V', 'B', 'M', 'D', 'R', 'J', 'M', 'B', 'S', 'Q', 'G', 'Z', 'W', 'S', 'T', 'C']
+draining C
+target is now ['S', 'P', 'L', 'C', 'F', 'V', 'B', 'M', 'D', 'R', 'J', 'M', 'B', 'S', 'Q', 'G', 'Z', 'W', 'S', 'T', 'C', 'C']
+moving 3 from 9 to 8
+amount is 3, source is ['J', 'F', 'R', 'R', 'N', 'L']
+target was []
+draining R
+draining N
+draining L
+target is now ['R', 'N', 'L']
+moving 1 from 6 to 7
+amount is 1, source is ['W']
+target was ['S', 'P', 'L', 'C', 'F', 'V', 'B', 'M', 'D', 'R', 'J', 'M', 'B', 'S', 'Q', 'G', 'Z', 'W', 'S', 'T', 'C', 'C']
+draining W
+target is now ['S', 'P', 'L', 'C', 'F', 'V', 'B', 'M', 'D', 'R', 'J', 'M', 'B', 'S', 'Q', 'G', 'Z', 'W', 'S', 'T', 'C', 'C', 'W']
+moving 1 from 3 to 5
+amount is 1, source is ['M', 'C']
+target was []
+draining C
+target is now ['C']
+moving 1 from 8 to 3
+amount is 1, source is ['R', 'N', 'L']
+target was ['M']
+draining L
+target is now ['M', 'L']
+moving 22 from 7 to 5
+amount is 22, source is ['S', 'P', 'L', 'C', 'F', 'V', 'B', 'M', 'D', 'R', 'J', 'M', 'B', 'S', 'Q', 'G', 'Z', 'W', 'S', 'T', 'C', 'C', 'W']
+target was ['C']
+draining P
+draining L
+draining C
+draining F
+draining V
+draining B
+draining M
+draining D
+draining R
+draining J
+draining M
+draining B
+draining S
+draining Q
+draining G
+draining Z
+draining W
+draining S
+draining T
+draining C
+draining C
+draining W
+target is now ['C', 'P', 'L', 'C', 'F', 'V', 'B', 'M', 'D', 'R', 'J', 'M', 'B', 'S', 'Q', 'G', 'Z', 'W', 'S', 'T', 'C', 'C', 'W']
+moving 13 from 5 to 1
+amount is 13, source is ['C', 'P', 'L', 'C', 'F', 'V', 'B', 'M', 'D', 'R', 'J', 'M', 'B', 'S', 'Q', 'G', 'Z', 'W', 'S', 'T', 'C', 'C', 'W']
+target was ['V', 'W', 'V']
+draining J
+draining M
+draining B
+draining S
+draining Q
+draining G
+draining Z
+draining W
+draining S
+draining T
+draining C
+draining C
+draining W
+target is now ['V', 'W', 'V', 'J', 'M', 'B', 'S', 'Q', 'G', 'Z', 'W', 'S', 'T', 'C', 'C', 'W']
+moving 16 from 4 to 5
+amount is 16, source is ['H', 'T', 'Z', 'F', 'P', 'T', 'H', 'N', 'W', 'D', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L']
+target was ['C', 'P', 'L', 'C', 'F', 'V', 'B', 'M', 'D', 'R']
+draining H
+draining N
+draining W
+draining D
+draining N
+draining P
+draining B
+draining G
+draining F
+draining H
+draining Z
+draining L
+draining L
+draining C
+draining J
+draining L
+target is now ['C', 'P', 'L', 'C', 'F', 'V', 'B', 'M', 'D', 'R', 'H', 'N', 'W', 'D', 'N', 'P', 'B', 'G', 'F', 'H', 'Z', 'L', 'L', 'C', 'J', 'L']
+moving 3 from 1 to 4
+amount is 3, source is ['V', 'W', 'V', 'J', 'M', 'B', 'S', 'Q', 'G', 'Z', 'W', 'S', 'T', 'C', 'C', 'W']
+target was ['H', 'T', 'Z', 'F', 'P', 'T']
+draining C
+draining C
+draining W
+target is now ['H', 'T', 'Z', 'F', 'P', 'T', 'C', 'C', 'W']
+moving 2 from 3 to 9
+amount is 2, source is ['M', 'L']
+target was ['J', 'F', 'R']
+draining M
+draining L
+target is now ['J', 'F', 'R', 'M', 'L']
+moving 3 from 9 to 7
+amount is 3, source is ['J', 'F', 'R', 'M', 'L']
+target was ['S']
+draining R
+draining M
+draining L
+target is now ['S', 'R', 'M', 'L']
+moving 6 from 4 to 6
+amount is 6, source is ['H', 'T', 'Z', 'F', 'P', 'T', 'C', 'C', 'W']
+target was []
+draining F
+draining P
+draining T
+draining C
+draining C
+draining W
+target is now ['F', 'P', 'T', 'C', 'C', 'W']
+moving 1 from 4 to 2
+amount is 1, source is ['H', 'T', 'Z']
+target was []
+draining Z
+target is now ['Z']
+moving 2 from 7 to 3
+amount is 2, source is ['S', 'R', 'M', 'L']
+target was []
+draining M
+draining L
+target is now ['M', 'L']
+message is VZMHCFSRJ

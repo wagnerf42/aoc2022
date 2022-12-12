@@ -1,6 +1,8 @@
 use std::{
     fs::File,
     io::{BufRead, BufReader},
+    iter::Chain,
+    option::IntoIter,
     path::Path,
 };
 
@@ -27,16 +29,76 @@ struct Pos {
     y: usize,
 }
 
+impl Pos {
+    fn neighbours(
+        &self,
+        xmax: usize,
+        ymax: usize,
+    ) -> Chain<Chain<Chain<IntoIter<Pos>, IntoIter<Pos>>, IntoIter<Pos>>, IntoIter<Pos>> {
+        self.x
+            .checked_sub(1)
+            .map(|x| Pos { x, y: self.y })
+            .into_iter()
+            .chain(self.y.checked_sub(1).map(|y| Pos { x: self.x, y }))
+            .chain((self.x + 1 < xmax).then_some(Pos {
+                x: self.x + 1,
+                y: self.y,
+            }))
+            .chain((self.y + 1 < ymax).then_some(Pos {
+                x: self.x,
+                y: self.y + 1,
+            }))
+    }
+}
+
+fn height_diff(grid: &[Vec<u8>], pos1: &Pos, pos2: &Pos) -> u8 {
+    todo!()
+}
+
+struct NFilter<'g, G: Graph, I> {
+    graph: &'g G,
+    iter: I,
+    n1: &'g G::Vertex,
+}
+
+impl<'g, G: Graph, I: Iterator<Item = G::Vertex>> Iterator for NFilter<'g, G, I> {
+    type Item = I::Item;
+
+    fn next(&mut self) -> Option<Self::Item> {
+        self.iter
+            .next()
+            .filter(|n2| self.graph.are_neighbours(self.n1, n2))
+    }
+}
+
 trait Graph {
     type Vertex;
-    type Neighbours<'b>;
-    fn neighbours<'b>(&self, vertex: &Self::Vertex) -> Self::Neighbours<'b>;
+    type Neighbours<'b>
+    where
+        Self: 'b;
+    fn are_neighbours(&self, v1: &Self::Vertex, v2: &Self::Vertex) -> bool;
+    fn neighbours<'b>(&'b self, vertex: &'b Self::Vertex) -> Self::Neighbours<'b>;
 }
 
 impl Graph for Vec<Vec<u8>> {
     type Vertex = Pos;
-    fn neighbours<'b>(&self, vertex: &Self::Vertex) -> Self::Neighbours<'b> {
-        todo!()
+    type Neighbours<'b> = NFilter<
+        'b,
+        Self,
+        Chain<Chain<Chain<IntoIter<Pos>, IntoIter<Pos>>, IntoIter<Pos>>, IntoIter<Pos>>,
+    >;
+    fn neighbours<'b>(&'b self, vertex: &'b Self::Vertex) -> Self::Neighbours<'b> {
+        let ymax = self.len();
+        let xmax = self[0].len();
+        NFilter {
+            graph: self,
+            iter: vertex.neighbours(xmax, ymax),
+            n1: vertex,
+        }
+    }
+
+    fn are_neighbours(&self, v1: &Self::Vertex, v2: &Self::Vertex) -> bool {
+        height_diff(self, v1, v2) <= 1
     }
 }
 

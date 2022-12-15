@@ -7,6 +7,8 @@ use std::{
     ops::Range,
 };
 
+//well, that was awful
+
 fn count_inside(mut starts: Vec<i32>, mut ends: Vec<i32>, beacons: Option<&HashSet<i32>>) -> i32 {
     starts.sort_unstable();
     ends.sort_unstable();
@@ -15,14 +17,7 @@ fn count_inside(mut starts: Vec<i32>, mut ends: Vec<i32>, beacons: Option<&HashS
         .iter()
         .map(|s| (s, 1, false))
         .merge(ends.iter().map(|e| (e, -1, false)))
-        .merge(
-            beacons
-                .map(|v| &*v)
-                .into_iter()
-                .flatten()
-                .sorted()
-                .map(|x| (x, 0, true)),
-        )
+        .merge(beacons.into_iter().flatten().sorted().map(|x| (x, 0, true)))
         .scan(
             (0, None),
             |(inside, last_start), (x, insidediff, is_beacon)| {
@@ -51,13 +46,16 @@ fn count_inside(mut starts: Vec<i32>, mut ends: Vec<i32>, beacons: Option<&HashS
         - inner_beacons
 }
 
-fn minus_union(full_range: Range<i32>, ranges: &[Range<i32>]) -> impl Iterator<Item = Range<i32>> {
+// loop on full_range minus the union of the ranges (part2)
+fn minus_union<I: Iterator<Item = Range<i32>>>(
+    full_range: Range<i32>,
+    ranges: I,
+) -> impl Iterator<Item = Range<i32>> {
     let mut u = union(ranges)
         .take_while(move |r| r.start <= full_range.end)
         .map(move |r| r.start.max(full_range.start)..(r.end.min(full_range.end)))
-        .inspect(|r| eprintln!("union {r:?}"))
         .peekable();
-    let start = u.peek().cloned();
+    let start = u.peek().cloned().or(Some(full_range.end..full_range.end));
     start.map(|s| full_range.start..s.start).into_iter().chain(
         u.chain(std::iter::once(full_range.end..full_range.end))
             .tuple_windows()
@@ -65,9 +63,9 @@ fn minus_union(full_range: Range<i32>, ranges: &[Range<i32>]) -> impl Iterator<I
     )
 }
 
-fn union(ranges: &[Range<i32>]) -> impl Iterator<Item = Range<i32>> {
-    let (mut starts, mut ends): (Vec<i32>, Vec<i32>) =
-        ranges.iter().map(|r| (r.start, r.end)).unzip();
+// loop on the union of given ranges (part2)
+fn union<I: Iterator<Item = Range<i32>>>(ranges: I) -> impl Iterator<Item = Range<i32>> {
+    let (mut starts, mut ends): (Vec<i32>, Vec<i32>) = ranges.map(|r| (r.start, r.end)).unzip();
     starts.sort_unstable();
     ends.sort_unstable();
 
@@ -131,7 +129,9 @@ fn main() -> std::io::Result<()> {
     let r = count_inside(starts, ends, beacons.get(&TARGET));
     println!("{r}");
 
-    let ranges: Vec<(i32, i32, i32)> = BufReader::new(File::open("input")?)
+    // part 2
+
+    let ranges = BufReader::new(File::open("input")?)
         .lines()
         .filter_map(|l| l.ok())
         .filter_map(|l| {
@@ -149,19 +149,31 @@ fn main() -> std::io::Result<()> {
             let range_end = sx + distance + 1;
             (range_start, range_end, sy)
         })
-        .collect();
+        .collect::<Vec<_>>();
 
-    let singly_covered_lines: Vec<Range<i32>> = ranges
-        .iter()
-        .map(|(sx, ex, y)| {
-            let d = (*sx).min(4_000_001 - ex);
-            (*y - d)..(*y + d)
+    let f = (0..4_000_001)
+        .find_map(|y| {
+            minus_union(
+                0..4_000_001,
+                ranges.iter().filter_map(|(sx, ex, yr)| {
+                    let d = (yr - y).abs();
+                    let r = (sx + d)..(ex - d);
+                    if r.is_empty() {
+                        None
+                    } else {
+                        Some(r)
+                    }
+                }),
+            )
+            .find(|r| !r.is_empty())
+            .map(|r| {
+                assert!(r.start == r.end - 1);
+                r.start as u64 * 4_000_000 + y as u64
+            })
         })
-        .collect();
-    let maybe_uncovered_lines = minus_union(0..4_000_0001, &singly_covered_lines);
-    maybe_uncovered_lines
-        .flatten()
-        .for_each(|y| assert!(y <= 4_000_000));
+        .unwrap();
+
+    eprintln!("tuning frequency : {f}");
 
     Ok(())
 }

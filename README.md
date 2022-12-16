@@ -10,3 +10,4 @@ notable days :
 - 9: did a pseudo polynomial algo. should be possible to do it in poly time but much harder. maybe
 a good subject for the algorithms project ?
 - 11: multiple borrows of a Vec while iterating mutably on it : back to imperative programming + indices
+- 16: interesting prog dyn: the sequential version does more computations than the recursive one but it still much better due to the memory use

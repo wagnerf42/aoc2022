@@ -49,7 +49,8 @@ fn main() -> std::io::Result<()> {
         .collect::<Vec<u16>>();
 
     // put all non zero rates first so that we can encode what is released in a u8
-    assert!(rates.iter().filter(|&r| *r > 0).count() <= 16);
+    let non_zero_rates = rates.iter().filter(|&r| *r > 0).count();
+    assert!(non_zero_rates <= 16);
     let mut last_strong_rate = 0;
     for i in 0..nodes.len() {
         if rates[i] > 0 {
@@ -94,14 +95,23 @@ fn main() -> std::io::Result<()> {
 
     println!("max is {max_release}");
 
-    let mut cache = HashMap::with_capacity(1_800_000_000);
-    let max_release = solve2(
+    // let mut cache = HashMap::new();
+    // let max_release = solve2(
+    //     26,
+    //     [reversed_nodes["AA"], reversed_nodes["AA"]],
+    //     0,
+    //     &graph,
+    //     &rates,
+    //     &mut cache,
+    // );
+    // println!("max is {max_release}");
+
+    let max_release = solve2_seq(
         26,
-        [reversed_nodes["AA"], reversed_nodes["AA"]],
-        0u16,
+        reversed_nodes["AA"],
+        non_zero_rates as u8,
         &graph,
         &rates,
-        &mut cache,
     );
 
     println!("max is {max_release}");
@@ -163,7 +173,7 @@ fn solve2(
     if minutes == 0 {
         return 0;
     }
-    if let Some(answer) = cache.get(&(minutes, current_nodes, released.clone())) {
+    if let Some(answer) = cache.get(&(minutes, current_nodes, released)) {
         return *answer;
     }
 
@@ -173,7 +183,7 @@ fn solve2(
         for (i, n) in c.iter().enumerate() {
             if current_nodes[i] == *n && (*n < 16 && (new_released & 1 << *n) == 0) {
                 value += rates[*n as usize] * (minutes as u16 - 1);
-                new_released = new_released | (1 << *n);
+                new_released |= 1 << *n;
             }
         }
         let v = if c[0] <= c[1] {
@@ -217,4 +227,106 @@ fn solve2(
     };
     cache.insert((minutes, current_nodes, released), best_value);
     best_value
+}
+
+struct Cache {
+    data: Vec<Vec<u16>>,
+}
+
+impl Cache {
+    fn new(nodes: usize, released_configs: u16) -> Self {
+        Cache {
+            data: std::iter::repeat_with(|| vec![0; released_configs as usize])
+                .take((nodes * (nodes + 1)) / 2)
+                .collect(),
+        }
+    }
+    fn get(&self, nodes: [u8; 2], released: u16) -> u16 {
+        assert!(nodes[0] <= nodes[1]);
+        let n0 = nodes[0] as u16;
+        let n1 = nodes[1] as u16;
+        let nodes_index = (n1 * (n1 + 1)) / 2 + n0;
+        self.data[nodes_index as usize][released as usize]
+    }
+    fn set(&mut self, nodes: [u8; 2], released: u16, value: u16) {
+        assert!(nodes[0] <= nodes[1]);
+        let n0 = nodes[0] as u16;
+        let n1 = nodes[1] as u16;
+        let nodes_index = (n1 * (n1 + 1)) / 2 + n0;
+        self.data[nodes_index as usize][released as usize] = value
+    }
+}
+
+fn solve2_seq(
+    init_minutes: u8,
+    start_node: u8,
+    non_zero_rates: u8,
+    graph: &[Vec<u8>],
+    rates: &[u16],
+) -> u16 {
+    let released_configs = 1u16 << non_zero_rates;
+    let mut c1 = Cache::new(graph.len(), released_configs);
+    let mut c2 = Cache::new(graph.len(), released_configs);
+    let mut cache_refs = [&mut c1, &mut c2];
+    for minutes in 1..=init_minutes {
+        for released in 0..released_configs {
+            let next_configurations = |node: u8| {
+                (rates[node as usize] != 0 && (released & (1 << node)) == 0)
+                    .then_some(node)
+                    .into_iter()
+                    .chain(graph[node as usize].iter().copied())
+            };
+
+            for current_nodes in (0..(graph.len() as u8))
+                .flat_map(|n1| (n1..(graph.len() as u8)).map(move |n2| [n1, n2]))
+            {
+                let evaluate = |c: [u8; 2]| {
+                    let mut value = 0;
+                    let mut new_released = released;
+                    for (i, n) in c.iter().enumerate() {
+                        if current_nodes[i] == *n && (*n < 16 && (new_released & 1 << *n) == 0) {
+                            value += rates[*n as usize] * (minutes as u16 - 1);
+                            new_released |= 1 << *n;
+                        }
+                    }
+                    let v = if c[0] <= c[1] {
+                        [c[0], c[1]]
+                    } else {
+                        [c[1], c[0]]
+                    };
+                    value + cache_refs[0].get(v, new_released)
+                };
+
+                let best_value = if current_nodes[0] == current_nodes[1] {
+                    next_configurations(current_nodes[0])
+                        .enumerate()
+                        .flat_map(|(i, c1)| {
+                            next_configurations(current_nodes[0])
+                                .skip(i + 1)
+                                .map(move |c2| [c1, c2])
+                        })
+                        .map(evaluate)
+                        .max()
+                        .unwrap_or_else(|| {
+                            if (released & (1 << current_nodes[0])) == 0 {
+                                rates[current_nodes[0] as usize] * (minutes as u16 - 1)
+                            } else {
+                                0
+                            }
+                        })
+                } else {
+                    next_configurations(current_nodes[0])
+                        .flat_map(|c1| {
+                            next_configurations(current_nodes[1]).map(move |c2| [c1, c2])
+                        })
+                        .map(evaluate)
+                        .max()
+                        .unwrap()
+                };
+                cache_refs[1].set(current_nodes, released, best_value);
+            }
+        }
+        cache_refs.swap(0, 1);
+    }
+    cache_refs[0].get([start_node, start_node], 0)
 }

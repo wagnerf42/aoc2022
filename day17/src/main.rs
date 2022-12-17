@@ -28,12 +28,11 @@ fn main() -> std::io::Result<()> {
             b'>' => 1,
             _ => unreachable!(),
         })
-        .cycle()
-        .enumerate();
+        .cycle();
 
-    for rock in rocks.iter().cycle().take(2022) {
+    for rock in rocks.iter().cycle().take(2021) {
         let mut pos = (2, map.len() - 4);
-        for (movement_index, x_offset) in &mut movements {
+        for x_offset in &mut movements {
             pos = try_side_move(rock, pos, &map, x_offset);
             if let Some(down_pos) = try_moving_down(rock, pos, &map) {
                 pos = down_pos
@@ -57,7 +56,7 @@ fn main() -> std::io::Result<()> {
 
     let mut map = CMap::new();
     // let's remember all places where a horizontal rock (index 0) fills a line
-    let mut seen_pos: HashMap<VecDeque<[u8; 7]>, usize> = HashMap::new();
+    let mut seen_pos: HashMap<(VecDeque<[u8; 7]>, usize), usize> = HashMap::new();
     let mut remembered_positions: Vec<(VecDeque<[u8; 7]>, usize, usize, usize)> = Vec::new();
     for (rock_index, rock) in rocks.iter().cycle().take(10_000_000_000).enumerate() {
         let mut pos = (2, map.len() - 4);
@@ -70,9 +69,6 @@ fn main() -> std::io::Result<()> {
                 if map.line_full(pos.1) {
                     map.compress(pos.1);
                     if rock_index % rocks.len() == 0 {
-                        if seen_pos.contains_key(&map.lines) {
-                            panic!("FOUND IT")
-                        }
                         let new_index = remembered_positions.len();
                         remembered_positions.push((
                             map.lines.clone(),
@@ -80,16 +76,80 @@ fn main() -> std::io::Result<()> {
                             pos.1,
                             rock_index,
                         ));
-                        seen_pos.insert(map.lines.clone(), new_index);
+                        let move_code = movement_index % moves.len();
+                        if let Some(seen_index) = seen_pos.get(&(map.lines.clone(), move_code)) {
+                            eprintln!("at pos {new_index} we go back to pos {seen_index}");
+                            complete_computations(
+                                &moves,
+                                &rocks,
+                                &remembered_positions[*seen_index..],
+                                movement_index,
+                                pos.1,
+                                rock_index,
+                            );
+                            return Ok(());
+                        }
+                        seen_pos.insert((map.lines.clone(), move_code), new_index);
                     }
                 }
-
                 break;
             }
         }
     }
     println!("tower height: {}", map.len() - 7);
     Ok(())
+}
+
+fn complete_computations(
+    moves: &[u8],
+    rocks: &[Vec<(usize, usize)>],
+    seen_index: &[(VecDeque<[u8; 7]>, usize, usize, usize)],
+    mut movement_index: usize, // we just did this guy
+    mut y: usize,              // we just completed the line at this y
+    rock_index: usize,         // we just stored this rock
+) {
+    eprintln!("cycle is of length {}", seen_index.len());
+    let mut needed_rocks = 1_000_000_000_000 - (rock_index + 1); // this is a shitty +1
+    let (first_map, first_move_index, first_y, first_rock_index) = seen_index.first().unwrap();
+    let (_, last_move_index, last_y, last_rock_index) = seen_index.last().unwrap();
+    let rocks_per_full_cycle = last_rock_index - first_rock_index;
+    let y_per_full_cycle = last_y - first_y;
+    let movements_per_full_cycle = last_move_index - first_move_index;
+    eprintln!("each full cycle we do {rocks_per_full_cycle} and we need {needed_rocks}");
+    let full_cycles_needed = needed_rocks / rocks_per_full_cycle;
+    eprintln!("we need {full_cycles_needed} full cycles");
+    needed_rocks %= rocks_per_full_cycle;
+    movement_index += movements_per_full_cycle * full_cycles_needed;
+    y += y_per_full_cycle * full_cycles_needed;
+    eprintln!("we are now at {movement_index} {y} {needed_rocks}");
+    let mut map = CMap {
+        real_height: y + first_map.len(),
+        lines: first_map.clone(),
+    };
+
+    let mut movements = moves
+        .iter()
+        .map(|c| match c {
+            b'<' => -1,
+            b'>' => 1,
+            _ => unreachable!(),
+        })
+        .cycle()
+        .skip((movement_index + 1) % moves.len());
+
+    for rock in rocks.iter().cycle().skip(1).take(needed_rocks) {
+        let mut pos = (2, map.len() - 4);
+        for x_offset in &mut movements {
+            pos = try_side_move(rock, pos, &map, x_offset);
+            if let Some(down_pos) = try_moving_down(rock, pos, &map) {
+                pos = down_pos
+            } else {
+                add_to_map(&mut map, rock, pos);
+                break;
+            }
+        }
+    }
+    println!("tower height: {}", map.len() - 7);
 }
 
 fn stone_positions(
@@ -161,11 +221,15 @@ impl CMap {
             lines: std::iter::repeat_with(|| [b'.'; 7]).take(7).collect(),
         }
     }
+    fn display(&self) {
+        self.lines
+            .iter()
+            .rev()
+            .map(|l| std::str::from_utf8(l).unwrap())
+            .for_each(|l| println!("{l}"))
+    }
     fn deque_y(&self, real_y: usize) -> usize {
         real_y - (self.real_height - self.lines.len())
-    }
-    fn is_reset(&self) -> bool {
-        self.lines.len() == 1
     }
     fn compress(&mut self, y: usize) {
         if let Some(full_line_y) = (y..(y + 4)).filter(|&y| self.line_full(y)).last() {

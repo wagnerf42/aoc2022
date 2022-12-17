@@ -9,6 +9,7 @@ use std::{
 fn main() -> std::io::Result<()> {
     let mut moves = Vec::new();
     BufReader::new(File::open("input")?).read_to_end(&mut moves)?;
+    moves.retain(|&c| c == b'<' || c == b'>');
 
     let rocks = vec![
         vec![(0, 0), (1, 0), (2, 0), (3, 0)],
@@ -22,10 +23,10 @@ fn main() -> std::io::Result<()> {
 
     let mut movements = moves
         .iter()
-        .filter_map(|c| match c {
-            b'<' => Some(-1),
-            b'>' => Some(1),
-            _ => None,
+        .map(|c| match c {
+            b'<' => -1,
+            b'>' => 1,
+            _ => unreachable!(),
         })
         .cycle();
 
@@ -43,24 +44,63 @@ fn main() -> std::io::Result<()> {
     }
     println!("tower height: {}", map.len() - 7);
 
-    let mut map = CMap::new();
+    let cache = (0..moves.len())
+        .map(|start_position| {
+            let mut movements = moves
+                .iter()
+                .map(|c| match c {
+                    b'<' => -1,
+                    b'>' => 1,
+                    _ => unreachable!(),
+                })
+                .cycle()
+                .skip(start_position)
+                .enumerate();
+            let mut map = CMap::new();
+            for (rock_index, rock) in rocks.iter().cycle().enumerate() {
+                let mut pos = (2, map.len() - 4);
+                for (movement_index, x_offset) in &mut movements {
+                    pos = try_side_move(rock, pos, &map, x_offset);
+                    if let Some(down_pos) = try_moving_down(rock, pos, &map) {
+                        pos = down_pos
+                    } else {
+                        add_to_map(&mut map, rock, pos);
+                        if rock_index % rocks.len() == 0 && map.line_full(pos.1) {
+                            // we now know that :
+                            // - starting from 'start_position'
+                            // we need to move 'movement_index' + 1 times
+                            // before filling a new line at y = pos.1
+                            // we placed 'rock_index' + 1 rocks
+                            return (movement_index + 1, pos.1 + 1, rock_index + 1);
+                        }
+                        break;
+                    }
+                }
+            }
+            unreachable!()
+        })
+        .collect::<Vec<_>>();
+
+    let (m, y, r) = std::iter::successors(Some((0, 0, 0)), |(m, y, r)| {
+        let (m_delta, y_delta, r_delta) = cache[m % moves.len()];
+        Some((m + m_delta, y + y_delta, r + r_delta))
+    })
+    .take_while(|(_, _, r)| *r <= 10_000_000_000)
+    .last()
+    .unwrap();
+
     let mut movements = moves
         .iter()
-        .filter_map(|c| match c {
-            b'<' => Some(-1),
-            b'>' => Some(1),
-            _ => None,
+        .map(|c| match c {
+            b'<' => -1,
+            b'>' => 1,
+            _ => unreachable!(),
         })
-        .cycle();
+        .cycle()
+        .skip(m % moves.len());
 
-    for (i, rock) in rocks.iter().cycle().take(1_000_000_000_000).enumerate() {
-        if i % 1_000_000_000 == 0 {
-            println!(
-                "doing {}, size is now {}",
-                i / 1_000_000_000,
-                map.lines.len()
-            );
-        }
+    let mut map = CMap::new();
+    for rock in rocks.iter().cycle().take(10_000_000_000 - r) {
         let mut pos = (2, map.len() - 4);
         for x_offset in &mut movements {
             pos = try_side_move(rock, pos, &map, x_offset);
@@ -68,13 +108,11 @@ fn main() -> std::io::Result<()> {
                 pos = down_pos
             } else {
                 add_to_map(&mut map, rock, pos);
-                map.compress(pos.1);
                 break;
             }
         }
     }
-    println!("tower height: {}", map.len() - 7);
-
+    println!("tower height: {}", y + map.len() - 7);
     Ok(())
 }
 

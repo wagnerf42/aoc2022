@@ -85,23 +85,18 @@ fn fill(
     let mut stack = vec![start];
     let mut seen = HashSet::new();
     seen.insert(start);
-    std::iter::from_fn(|| {
-        if let Some(current_point) = stack.pop() {
-            stack.extend(neighbours(&current_point).filter(|n| {
-                let r = !points.contains(n)
-                    && !seen.contains(n)
-                    && xrange.contains(&n.0)
-                    && yrange.contains(&n.1)
-                    && zrange.contains(&n.2);
-                if r {
-                    seen.insert(*n);
-                }
-                r
-            }));
-            Some(current_point)
-        } else {
-            None
-        }
-    })
-    .collect()
+    while let Some(current_point) = stack.pop() {
+        stack.extend(neighbours(&current_point).filter(|n| {
+            let r = !points.contains(n)
+                && !seen.contains(n)
+                && xrange.contains(&n.0)
+                && yrange.contains(&n.1)
+                && zrange.contains(&n.2);
+            if r {
+                seen.insert(*n);
+            }
+            r
+        }));
+    }
+    seen
 }

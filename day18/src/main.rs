@@ -1,6 +1,6 @@
 use itertools::Itertools;
 use std::{
-    collections::{HashMap, HashSet},
+    collections::HashSet,
     fs::File,
     io::{BufRead, BufReader},
 };
@@ -16,14 +16,6 @@ fn neighbours(point: &(i32, i32, i32)) -> impl Iterator<Item = (i32, i32, i32)> 
         (x, y, z + 1),
     ]
     .into_iter()
-}
-
-fn inner_intervals(coordinates: &[i32]) -> impl Iterator<Item = std::ops::Range<i32>> + '_ {
-    coordinates
-        .iter()
-        .tuple_windows()
-        .map(|(c1, c2)| (c1 + 1)..*c2)
-        .filter(|r| !r.is_empty())
 }
 
 fn main() -> std::io::Result<()> {
@@ -44,53 +36,72 @@ fn main() -> std::io::Result<()> {
         .count();
     println!("sides: {sides}");
 
-    let mut xs: HashMap<(i32, i32), Vec<i32>> = HashMap::new();
-    let mut ys: HashMap<(i32, i32), Vec<i32>> = HashMap::new();
-    let mut zs: HashMap<(i32, i32), Vec<i32>> = HashMap::new();
-    BufReader::new(File::open("input")?)
-        .lines()
-        .filter_map(|l| l.ok())
-        .filter_map(|l| {
-            l.split(',')
-                .filter_map(|t| t.parse::<i32>().ok())
-                .tuples()
-                .next()
-        })
-        .for_each(|(x, y, z)| {
-            xs.entry((y, z)).or_default().push(x);
-            ys.entry((x, z)).or_default().push(y);
-            zs.entry((x, y)).or_default().push(z);
-        });
-
-    xs.values_mut().for_each(|v| v.sort_unstable());
-    ys.values_mut().for_each(|v| v.sort_unstable());
-    zs.values_mut().for_each(|v| v.sort_unstable());
-
-    let inner_points = xs
+    let xlimits = points
         .iter()
-        .flat_map(|(&(y, z), vx)| inner_intervals(vx).flatten().map(move |x| (x, y, z)))
-        .chain(
-            ys.iter()
-                .flat_map(|(&(x, z), vy)| inner_intervals(vy).flatten().map(move |y| (x, y, z))),
-        )
-        .chain(
-            zs.iter()
-                .flat_map(|(&(x, y), vz)| inner_intervals(vz).flatten().map(move |z| (x, y, z))),
-        )
-        .fold(HashMap::new(), |mut h: HashMap<(i32, i32, i32), u8>, p| {
-            *h.entry(p).or_default() += 1;
-            h
-        })
-        .into_iter()
-        .filter_map(|(p, c)| if c == 3 { Some(p) } else { None })
-        .collect::<HashSet<_>>();
+        .copied()
+        .map(|(x, _, _)| x)
+        .minmax()
+        .into_option()
+        .unwrap_or_default();
 
-    let inner_sides = points
+    let ylimits = points
+        .iter()
+        .copied()
+        .map(|(_, y, _)| y)
+        .minmax()
+        .into_option()
+        .unwrap_or_default();
+
+    let zlimits = points
+        .iter()
+        .copied()
+        .map(|(_, _, z)| z)
+        .minmax()
+        .into_option()
+        .unwrap_or_default();
+
+    let external_points = fill(&points, xlimits, ylimits, zlimits);
+
+    let external_sides = points
         .iter()
         .flat_map(neighbours)
-        .filter(|p| inner_points.contains(p))
+        .filter(|p| external_points.contains(p))
         .count();
-    println!("sides: {}", sides - inner_sides);
+    println!("external sides: {external_sides}");
 
     Ok(())
+}
+
+fn fill(
+    points: &HashSet<(i32, i32, i32)>,
+    xlimits: (i32, i32),
+    ylimits: (i32, i32),
+    zlimits: (i32, i32),
+) -> HashSet<(i32, i32, i32)> {
+    let xrange = (xlimits.0 - 1)..(xlimits.1 + 2);
+    let yrange = (ylimits.0 - 1)..(ylimits.1 + 2);
+    let zrange = (zlimits.0 - 1)..(zlimits.1 + 2);
+    let start = (xrange.start, yrange.start, zrange.start);
+    let mut stack = vec![start];
+    let mut seen = HashSet::new();
+    seen.insert(start);
+    std::iter::from_fn(|| {
+        if let Some(current_point) = stack.pop() {
+            stack.extend(neighbours(&current_point).filter(|n| {
+                let r = !points.contains(n)
+                    && !seen.contains(n)
+                    && xrange.contains(&n.0)
+                    && yrange.contains(&n.1)
+                    && zrange.contains(&n.2);
+                if r {
+                    seen.insert(*n);
+                }
+                r
+            }));
+            Some(current_point)
+        } else {
+            None
+        }
+    })
+    .collect()
 }

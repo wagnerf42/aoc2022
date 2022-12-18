@@ -27,7 +27,7 @@ fn inner_intervals(coordinates: &[i32]) -> impl Iterator<Item = std::ops::Range<
 }
 
 fn main() -> std::io::Result<()> {
-    let points: HashSet<(i32, i32, i32)> = BufReader::new(File::open("input3")?)
+    let points: HashSet<(i32, i32, i32)> = BufReader::new(File::open("input")?)
         .lines()
         .filter_map(|l| l.ok())
         .filter_map(|l| {
@@ -47,7 +47,7 @@ fn main() -> std::io::Result<()> {
     let mut xs: HashMap<(i32, i32), Vec<i32>> = HashMap::new();
     let mut ys: HashMap<(i32, i32), Vec<i32>> = HashMap::new();
     let mut zs: HashMap<(i32, i32), Vec<i32>> = HashMap::new();
-    BufReader::new(File::open("input3")?)
+    BufReader::new(File::open("input")?)
         .lines()
         .filter_map(|l| l.ok())
         .filter_map(|l| {
@@ -83,7 +83,7 @@ fn main() -> std::io::Result<()> {
         })
         .into_iter()
         .filter_map(|(p, c)| if c == 3 { Some(p) } else { None })
-        .collect::<Vec<_>>();
+        .collect::<HashSet<_>>();
 
     let inner_sides = points
         .iter()

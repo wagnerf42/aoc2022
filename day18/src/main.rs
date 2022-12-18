@@ -27,7 +27,7 @@ fn inner_intervals(coordinates: &[i32]) -> impl Iterator<Item = std::ops::Range<
 }
 
 fn main() -> std::io::Result<()> {
-    let points: HashSet<(i32, i32, i32)> = BufReader::new(File::open("input2")?)
+    let points: HashSet<(i32, i32, i32)> = BufReader::new(File::open("input3")?)
         .lines()
         .filter_map(|l| l.ok())
         .filter_map(|l| {
@@ -47,7 +47,7 @@ fn main() -> std::io::Result<()> {
     let mut xs: HashMap<(i32, i32), Vec<i32>> = HashMap::new();
     let mut ys: HashMap<(i32, i32), Vec<i32>> = HashMap::new();
     let mut zs: HashMap<(i32, i32), Vec<i32>> = HashMap::new();
-    BufReader::new(File::open("input2")?)
+    BufReader::new(File::open("input3")?)
         .lines()
         .filter_map(|l| l.ok())
         .filter_map(|l| {
@@ -66,25 +66,24 @@ fn main() -> std::io::Result<()> {
     ys.values_mut().for_each(|v| v.sort_unstable());
     zs.values_mut().for_each(|v| v.sort_unstable());
 
-    let in_x: HashSet<(i32, i32, i32)> = xs
+    let inner_points = xs
         .iter()
         .flat_map(|(&(y, z), vx)| inner_intervals(vx).flatten().map(move |x| (x, y, z)))
-        .collect();
-
-    let in_y: HashSet<(i32, i32, i32)> = ys
-        .iter()
-        .flat_map(|(&(x, z), vy)| inner_intervals(vy).flatten().map(move |y| (x, y, z)))
-        .collect();
-
-    let in_z: HashSet<(i32, i32, i32)> = zs
-        .iter()
-        .flat_map(|(&(x, y), vz)| inner_intervals(vz).flatten().map(move |z| (x, y, z)))
-        .collect();
-    let inner_points: HashSet<_> = in_x
-        .intersection(&in_y)
-        .filter(|p| in_z.contains(p))
-        .copied()
-        .collect();
+        .chain(
+            ys.iter()
+                .flat_map(|(&(x, z), vy)| inner_intervals(vy).flatten().map(move |y| (x, y, z))),
+        )
+        .chain(
+            zs.iter()
+                .flat_map(|(&(x, y), vz)| inner_intervals(vz).flatten().map(move |z| (x, y, z))),
+        )
+        .fold(HashMap::new(), |mut h: HashMap<(i32, i32, i32), u8>, p| {
+            *h.entry(p).or_default() += 1;
+            h
+        })
+        .into_iter()
+        .filter_map(|(p, c)| if c == 3 { Some(p) } else { None })
+        .collect::<Vec<_>>();
 
     let inner_sides = points
         .iter()
